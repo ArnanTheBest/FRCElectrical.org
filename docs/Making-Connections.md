@@ -9,12 +9,12 @@ This page covers everything needed for you to make successful connections in the
 
 ## Crimping Connectors
 * Molex: This is the single best connector for CAN and low AWG power wire. 
-  * It’s easy to crimp, low profile, shrouded, and pin and socket. 
-  * Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. 
-  * Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
+  - It’s easy to crimp, low profile, shrouded, and pin and socket. 
+  - Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. 
+  - Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
 * Anderson: For higher AWG power wire, Anderson is the best connector. The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 * Powerpole adapter boards
-  * As mentioned previously, these are boards for Krakens that convert the ring terminal outputs to Anderson and Molex.  
+  - As mentioned previously, these are boards for Krakens that convert the ring terminal outputs to Anderson and Molex.  
 * Ferrules: Used for wires that connect to the ports of components like the RIO/SYSTEMCORE or PDH as well as for connections that involve linear WAGOs.
 * Dupont: Dupont crimps were commonly used for Rio Connections, but are not recommended for new robots. With Systemcore, molex is recommended for connections.
 
