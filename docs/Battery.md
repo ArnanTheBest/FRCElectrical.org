@@ -5,7 +5,8 @@ title: Battery
 
 # Batteries
 * FRC Batteries are 12V Sealed Lead Acid (SLA) Batteries- the same kind found in your car. 
-* In FRC, we try to push our batteries to the limit so that our bot gets the most power possible delivered in the most efficient way. By pushing batteries to their limits, we need to be very careful. This means for one following all of the safety guidelines to a tee, as batteries can quickly become the most unsafe thing on the robot. 
+* In FRC, we try to push our batteries to the limit so that our bot gets the most power possible delivered in the most efficient way. By pushing batteries to their limits, we need to be very careful. 
+  * This means for one following all of the safety guidelines to a tee, as batteries can quickly become the most unsafe thing on the robot. 
 
 ## What to Get
 * SLA Batteries come from many vendors. For FRC, we use 3 brands mainly: [Duracell](https://www.batteriesplus.com/product-details/sealed-lead-acid/battery/duracell-ultra/slaa12=18nb?storecode=847&source=google&medium=search&campaign=ecommppc&gad_source=1&gad_campaignid=22449530331&gbraid=0AAAAADgLl5V8SjVLRuUho-ntKgukCfuuM&gclid=CjwKCAjwuuPRBhAnEiwA2Ji8egYnQGYlc_-MwXLNTL3WrZ4Lnflg1MSxvJ7FVTnajWR_du3X8Nq2nhoCPzkQAvD_BwE), [Energizer](https://andymark.com/products/energizer-en18-12v-sla-battery?srsltid=AfmBOooztzZ5x0MIwI7O2a1xBPfYKvO2IUv87yQGBW8DTM_xbGeWM2z1), and [MK](https://andymark.com/products/mk-es17-12-12v-sla-battery-set-of-2?srsltid=AfmBOoqYQC4rZoPfqriHaM3sP9d_8v28mfRGEqA09tlmUgvXY8S4WQ7M). 
@@ -16,8 +17,6 @@ title: Battery
 === "Duracell"
     ![Duracell](/assets/Battery/Duracell.png)
 
-!!! warning
-    Duracell is known to be inconsistent, they can be better than MK, however you have to buy many, and then send back the bad ones.
 
 ## Wires/Connectors for Batteries
 * There are two main options for battery wires and battery connectors. We use 4 and 6 AWG wire for batteries and for connectors we use [SB50s](https://powerwerx.com/anderson-sb-connectors-sb50-50amp?srsltid=AfmBOooEGI9cCmnGoLNoHptg3VvKkSyAbujIvzm3Ka8k7bPd4rj6Me6m) and [SB120s](https://powerwerx.com/anderson-sb-connectors-sb120-120amp). 
@@ -43,7 +42,7 @@ title: Battery
   * For 4 AWG use the 25 setting, as 25mm^2 is equal to 4 AWG. 
   * For 6 AWG use the 16 setting with the same logic. 2 crimps for each terminal/lug is recommended for optimal grip onto the wire. 
   * This crimp takes a lot of force and may be hard for some so assistance can always be asked for.
-* Step 4 (FOR LUGS): For lugs, perform the steps described in [Battery Assembly](link), and then, being careful to not allow any metal (including the metal already on the battery) to be exposed, move forward and heat up the heat shrink.
+* Step 4 (FOR LUGS): For lugs, perform the steps described in [Battery Assembly](contributions/link), and then, being careful to not allow any metal (including the metal already on the battery) to be exposed, move forward and heat up the heat shrink.
 * Step 4 (FOR CONNECTORS): once both wires are done, place them into the connector, with red as positive and black as negative. The hook should go over the metal bit at the end and a click should be heard. To undo, use a flathead screwdriver to pry the hook over the metal bit.
 
 ## Battery Process Flowchart

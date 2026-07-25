@@ -46,7 +46,6 @@ Copyright &copy; 2026 FRCElectrical.org
 # Read more: https://zensical.org/docs/setup/navigation/
 nav = [
   "index.md",
-  "Educator's-Handbook.md",
   "intro.md",
   {
     "FRC Control System" = [
@@ -58,8 +57,15 @@ nav = [
   "Making-Connections.md",
   "Mechanism-Wiring.md",
   "Tools.md",
-  "Glossary.md",
-  "Contribution.md"
+  "Educator's-Handbook.md",
+  "Additional-Resources.md",
+  {
+    "Contribution" = [
+      "contributions/Contribution.md",
+      "contributions/StyleGuide.md",
+      "contributions/VSCodeSetup.md"
+    ]
+  }
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -70,7 +76,6 @@ nav = [
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-# Add a custom stylesheet to set a blue theme that works in light/dark modes
 extra_css = ["stylesheets/theme.css"]
 
 # With the `extra_javascript` option you can add your own JavaScript to your

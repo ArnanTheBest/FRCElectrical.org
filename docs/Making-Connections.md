@@ -8,11 +8,15 @@ title: Making Connections
 This page covers everything needed for you to make successful connections in the FRC Control System
 
 ## Crimping Connectors
-* Molex (explain to cut off Dupont): This is the single best connector for CAN and low AWG power wire. It’s easy to crimp, low profile, shrouded, and pin and socket. Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
+* Molex: This is the single best connector for CAN and low AWG power wire. 
+  * It’s easy to crimp, low profile, shrouded, and pin and socket. 
+  * Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. 
+  * Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
 * Anderson: For higher AWG power wire, Anderson is the best connector. The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 * Powerpole adapter boards
   * As mentioned previously, these are boards for Krakens that convert the ring terminal outputs to Anderson and Molex.  
 * Ferrules: Used for wires that connect to the ports of components like the RIO/SYSTEMCORE or PDH as well as for connections that involve linear WAGOs.
+* Dupont: Dupont crimps were commonly used for Rio Connections, but are not recommended for new robots. With Systemcore, molex is recommended for connections.
 
 ### Molex 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/khB2-0bkj9Q?si=OKBMugaFJCiNT_xy" title="Molex Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -31,7 +35,7 @@ This page covers everything needed for you to make successful connections in the
     They are HEAVILY discouraged for teams, and especially newer teams. The reason that teams usually go this route is that they’re seen as equivalent to a continuous run. In fact, soldering is a failure point on the bot, and like connectors, it needs to be properly strain relieved. 
 * Soldering is relatively easy once it's learned, but there is a learning curve, as well as more room for error than crimped connectors. Additionally, in an FRC environment it’s fast paced, if something breaks or needs to be replaced it’s extremely challenging.
 
-## Lineman's Splice
+### Lineman's Splice
 * The Lineman’s Splice also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo) is probably the highest strength solder joint, and also the one with the profile best fit for heatshrink.
   * Solder sleeves (explain why not to use them: low-melt solder, which is usually low quality, and doesn't flow well. It's just as easy as normal solder splices to get wrong if you don't apply enough heat for long enough.)
 * 221 Inline WAGOs & y/g WAGOs

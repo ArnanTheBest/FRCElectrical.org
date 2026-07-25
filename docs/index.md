@@ -103,7 +103,7 @@ The comprehensive learning guide and technical reference for FRC Electrical.
 -   :lucide-wrench:{ style="color: #ffffff;" } **Contribution**
     <br>
     Help contribute! Since FRCElectrical.org is in an early stage, we need you.
-    [→](Contribution.md){ .stretched-link }
+    [→](contributions/Contribution.md){ .stretched-link }
 
 </div>
 
