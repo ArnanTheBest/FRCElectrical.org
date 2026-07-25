@@ -66,11 +66,6 @@ With your virtual environment active, install Zensical via `pip`. Zensical is wr
 pip install zensical
 ```
 
-*Tip: If the project includes additional custom modules or plugins, you may also need to install the project's specific requirements:*
-```bash
-pip install -r requirements.txt
-```
-
 ---
 
 ## 5. Running the Site Locally
