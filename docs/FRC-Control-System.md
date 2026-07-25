@@ -31,6 +31,9 @@ title: FRC Control System
         * How does this get prevented? The commutator uses a specific pattern of metal to make it so that the field always opposes that of the stator magnets, therefore causing rotation. Brushed motors are most commonly used in cheaper appliances.
     * Brushless: Brushless motors are like brushed motors in many ways. They can have an internal or external rotor (the diagram has an internal rotor). What you may notice about the motor is that it has no brushes. How then does it create opposite polarities? This is through an electronic circuit that detects how much the motor rotates. 
         * This makes for less contact throughout the system and a more precise transmission of power, which is why brushless motors are used throughout the world and especially in FRC. 
+
+![Brushed vs Brushless](/assets/images/brushed_vs_brushless.png)
+
 #### Common FRC Motors
 ##### WCP's Kraken
 Krakens are arguably the most powerful motor in FRC. There are two types of Krakens- [X60](https://store.ctr-electronics.com/products/kraken-x60) and [X44](https://store.ctr-electronics.com/products/kraken-x44?srsltid=AfmBOopKr-9t43Uap2jITNGqDDsnkg3THzY--EEx-VA4rGnkshChu-4a) (For 60 mm and 44 mm Outer Diameter, respectively). 
