@@ -240,7 +240,6 @@ These are for vision processing. They’re important in both autonomous and tele
     * Zipties are a great way to mount your radios.
 
 !!! tip 
-
-  When Radio is placed in a specific location with little bearing on where it is placed, such as on pocketed plates, Outline it with a sharpie.
+    When Radio is placed in a specific location with little bearing on where it is placed, such as on pocketed plates, Outline it with a sharpie.
 
 
