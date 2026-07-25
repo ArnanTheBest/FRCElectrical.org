@@ -23,4 +23,4 @@
 *[Pneumatics]: The use of compressed air to create motion or apply force.
 *[Current]: The flow of electric charge through a conductor.
 *[Resistance]: The opposition to current flow in an electrical circuit.
-*[WCP]: West Coast Products; An engineering and robotics supplier known for parts used in FIRST Robotics competitions
+*[WCP]: West Coast Products; An engineering and robotics supplier known for high quality parts used in FIRST Robotics competitions
