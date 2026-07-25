@@ -98,7 +98,7 @@ The comprehensive learning guide and technical reference for FRC Electrical.
 -  :lucide-square-chart-gantt:{ style="color: #ffffff;" } **Glossary**
     <br>
     Recaps specific Electrical Terminology!
-    [→](includes/Glossary.md){ .stretched-link }
+    [→](Glossary.md){ .stretched-link }
 
 -   :lucide-wrench:{ style="color: #ffffff;" } **Contribution**
     <br>
