@@ -156,6 +156,8 @@ Power distribution boards are how power gets around the robot. They can range fr
   * 22 AWG Wire = 10A Breaker
 * [REV's Breakers](https://www.revrobotics.com/auto-resetting-breakers/) are the best choice.
 
+![Breakers](/assets/FRC-Control-System/Breakers.png)
+
 ### Main Breaker
 * The main breaker is varied in form and is a crucial part of the robot. It’s basically your robot’s on/off switch. It is required to exist and be accessible on every robot. 
 === "Bussman Breaker"
