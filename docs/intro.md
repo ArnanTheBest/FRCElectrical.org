@@ -31,7 +31,10 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Strain relief: This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations.
 
 
-
+=== "CAN Wiring"
+    ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png){ width="50%" }
+=== "Power Wiring"
+    ![Power-Wire](/assets/FRC-Control-System/Power-Wire.png){ width="50%" }
 
 ### Parallel vs Series
 #### Paralell
