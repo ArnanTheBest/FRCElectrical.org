@@ -34,6 +34,8 @@ title: FRC Control System
 
 ![Brushed vs Brushless](/assets/images/brushed_vs_brushless.png)
 
+Brushed motor on left, brushless motor on right
+
 #### Common FRC Motors
 ##### WCP's Kraken
 Krakens are arguably the most powerful motor in FRC. There are two types of Krakens- [X60](https://store.ctr-electronics.com/products/kraken-x60) and [X44](https://store.ctr-electronics.com/products/kraken-x44?srsltid=AfmBOopKr-9t43Uap2jITNGqDDsnkg3THzY--EEx-VA4rGnkshChu-4a) (For 60 mm and 44 mm Outer Diameter, respectively). 

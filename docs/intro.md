@@ -30,6 +30,9 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Twist the wire pairs: We do this because it allows any external vibrations and EMI to affect both wires rather than one, keeping the measurements on each wire consistent with each other.
         - Strain relief: This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations.
 
+
+
+
 ### Parallel vs Series
 #### Paralell
 - Negative to Negative and Positive to Positive
