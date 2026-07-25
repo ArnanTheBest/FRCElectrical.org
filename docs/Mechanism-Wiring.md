@@ -40,7 +40,7 @@ The elevator carriage should be wired with a [BIGUS chain](https://www.igus.com/
 
 
 ## Linear Intake
-* Linear slides work very similar to Elevators. Both move in a straight motion and often show the same wiring solution. 
+* Linear slides work very similar to Elevators. Both move in a linear motion and often show the same wiring solution. 
 * You can wire a linear slide through two main reliable methods
   * Nylon Wire Loom
   * Energy Chain
