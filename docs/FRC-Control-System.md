@@ -13,14 +13,17 @@ title: FRC Control System
   * Soldering is a way that teams have spliced. You’ll learn later why soldering is considered bad for an FRC environment, but for now, just understand it is a worse solution than others. 
   * A 5-port [Wago](https://www.amazon.com/LEPEVNEY-Electrical-Connectors-Retardant-Connector/dp/B0GCJGNR1R/ref=sr_1_4?crid=3S5XVPL2BYERF&dib=eyJ2IjoiMSJ9.fnqoyr8S4BoE6gGHz4zoKNKmHKklMrr4b2weTcpcWDTtgCFb9RqDgBQ5F-tbMFAbu-gasv3x3za6PIa3aqW2dUvf2vMRlnPKnQA48KHO2SYTRiV69c_SfiG7Uk7fiULECS2MLTP-yaaymRvp14ij9Mud3-jhJY4C9Ki-CUEiCTAhYIK6Oak4YNHcirDnV_LF4RVtLIb8UO6KggrtqmTMvYdDPQzeTNgsVz_f8BBDDcQ.zFwnjvta4aXVr957XsFxWN2hmtDJTrVbEffRnxRYKV0&dib_tag=se&keywords=Wago%2B2%2BPort%2B(10)%2B3%2BPort%2B(10)%2B5%2BPort%2B(4)%2BLever-Nut%2BAssortment%2BPack%2BConductor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotiveor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotive&nsdOptOutParam=true&qid=1780958682&sprefix=wago%2B2%2Bport%2B10%2B3%2Bport%2B10%2B5%2Bport%2B4%2Blever-nut%2Bassortment%2Bpack%2Bconductor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotiveor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotive%2Caps%2C183&sr=8-4&th=1) is the most common correct way to accomplish a 4-way splice for encoder wires. 
 
-## CAN
-* Controller Area Network
+![5Wago](/assets/FRC-Control-System/5Wago.png)
+
+## CAN (Controller Area Network)
 * CAN can be wired in two different ways:
   * Daisy-chained: this is the way that CAN is meant to be wired, and it is the most common way that FRC components are wired. CAN wires originate at the Systemcore in one of the CAN bus ports. The wires then go to each component in order, ending at the terminating resistor. One full loop, as mentioned previously, is called a CAN bus.
   * Star topology (not recommended): This is the method used to branch the CAN bus by each individual component. This is used by some teams because in a normal CAN bus, if one component loses a connection, they all do. 
     * With a Star topology, each component has its own individual “CAN bus”. This is not recommended at all in modern FRC, as the introduction of SystemCore allows you to split up CAN buses much further than originally. 
     * Additionally, a star topology presents many issues as it is NOT AT ALL how CAN is meant to be wired.
   * Always place the resistor at the end of each loop. This will be a 120 OHM resistor in a WAGO, or if terminating at a motor with a powerpole adapter board, the Weidmuller connectors may be used.
+
+![CAN-Wiring](/assets/FRC Control System/CAN Wiring.png)
 
 ## Specific Electrical Components
 ### Motors
@@ -30,6 +33,11 @@ title: FRC Control System
         * How does this get prevented? The commutator uses a specific pattern of metal to make it so that the field always opposes that of the stator magnets, therefore causing rotation. Brushed motors are most commonly used in cheaper appliances.
     * Brushless: Brushless motors are like brushed motors in many ways. They can have an internal or external rotor (the diagram has an internal rotor). What you may notice about the motor is that it has no brushes. How then does it create opposite polarities? This is through an electronic circuit that detects how much the motor rotates. 
         * This makes for less contact throughout the system and a more precise transmission of power, which is why brushless motors are used throughout the world and especially in FRC. 
+
+![Brushed vs Brushless](/assets/images/brushed_vs_brushless.png)
+
+Brushed motor on left, brushless motor on right
+
 #### Common FRC Motors
 ##### WCP's Kraken
 Krakens are arguably the most powerful motor in FRC. There are two types of Krakens- [X60](https://store.ctr-electronics.com/products/kraken-x60) and [X44](https://store.ctr-electronics.com/products/kraken-x44?srsltid=AfmBOopKr-9t43Uap2jITNGqDDsnkg3THzY--EEx-VA4rGnkshChu-4a) (For 60 mm and 44 mm Outer Diameter, respectively). 
@@ -147,6 +155,8 @@ Power distribution boards are how power gets around the robot. They can range fr
   * 16-18 AWG Wire = 20A Breaker
   * 22 AWG Wire = 10A Breaker
 * [REV's Breakers](https://www.revrobotics.com/auto-resetting-breakers/) are the best choice.
+
+![Breakers](/assets/FRC-Control-System/Breakers.png)
 
 ### Main Breaker
 * The main breaker is varied in form and is a crucial part of the robot. It’s basically your robot’s on/off switch. It is required to exist and be accessible on every robot. 

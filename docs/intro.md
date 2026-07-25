@@ -30,6 +30,12 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Twist the wire pairs: We do this because it allows any external vibrations and EMI to affect both wires rather than one, keeping the measurements on each wire consistent with each other.
         - Strain relief: This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations.
 
+
+=== "CAN Wiring"
+    ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png){ width="50%" }
+=== "Power Wiring"
+    ![Power-Wire](/assets/FRC-Control-System/Power-Wire.png){ width="50%" }
+
 ### Parallel vs Series
 #### Paralell
 - Negative to Negative and Positive to Positive
@@ -38,4 +44,4 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 - Components are chained together from positive to negative to positive, etc.
 
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit.png)
-
+Parallel Circuit on the left, Series Circuit on the right
