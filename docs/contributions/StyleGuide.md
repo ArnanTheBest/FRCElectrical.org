@@ -4,6 +4,8 @@ icon: lucide/book-open-check
 description: Writing philosophy and standards for contributing content to FRCElectrical.org.
 ---
 
+DISCLAIMER: FRCElectrical.org takes a lot from FRCDesign.org
+
 ## Futureproofing and Usefulness
 
 To make the content you write useful for teams of all resource levels, while maintaining validity in the future, the goal isn't to go broad and shallow, but rather to go extra deep so you can equip students with the understanding of the underlying fundamentals behind concepts which they can then apply to their own unique situations. Pros and cons are context dependent while fundamentals are universal.
