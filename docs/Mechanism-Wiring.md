@@ -33,14 +33,14 @@ The elevator carriage should be wired with a [BIGUS chain](https://www.igus.com/
 
 254 has some tips on how to effectively manage a e-chain [here](https://www.chiefdelphi.com/t/most-common-issues-seen-on-robots-this-year/466119/69?u=jimmyy)
 
-=== "3506 YETI Robotics"
+=== "3506 YETI Robotics: 2024 Elevator"
     ![YETI-2024](/assets/Mechanisms/Elevator/Kitty2024PracticeField-removebg-preview.png){ width="50%" }
-=== "Second Example"
+=== "10523 Singularity Robotics: 2025 Elevator"
     ![Second](/assets/Mechanisms/Elevator/47U4BdC-removebg-preview.png){ width="50%" }
 
 
 ## Linear Intake
-* Linear slides work very similar to Elevators. Both move in a straight motion and often show the same wiring solution. 
+* Linear slides work very similar to Elevators. Both move in a linear motion and often show the same wiring solution. 
 * You can wire a linear slide through two main reliable methods
   * Nylon Wire Loom
   * Energy Chain
@@ -53,11 +53,11 @@ The elevator carriage should be wired with a [BIGUS chain](https://www.igus.com/
 ## Drivetrains
 - All of the electronics placement should be done in CAD. The electrical team should work with CAD to ascertain these locations. They can be fastened within either mounting holes, VHB, or Zipties. Grommet holes and grommets should be put into tubes so that wires can easily pass through without risk of damage.
 
-=== "254 2017"
+=== "254 Cheesy Poofs: 2017 Drivetrain"
     ![254-2017](/assets/Mechanisms/Drivetrain/254-2017.jpeg){ width="50%" }
-=== "254 Example"
-    ![254-example1](/assets/Mechanisms/Drivetrain/254-example.jpegg){ width="50%" }
-=== "2724 Avalanche: 2026 Brainpan"
+=== "254 Cheesy Poofs: 2014 Drivetrain"
+    ![254-example1](/assets/Mechanisms/Drivetrain/254-example.jpeg){ width="50%" }
+=== "1538 The Holy Cows: 2016 Drivetrain"
     ![1538-example](/assets/Mechanisms/Drivetrain/1538-example.jpeg){ width="50%" }
 
 ### Brain Pans

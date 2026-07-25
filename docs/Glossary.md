@@ -44,7 +44,7 @@ Here are some common terms and tools you may want to reference while learning ab
 
 - **TPA** - Terminal Positional assurance: This plastic part goes into Molex SL TPA housings for increased strength on the crimped connection.
 
-- **WCP** - West Coast Products; An engineering and robotics supplier known for parts used in FIRST Robotics competitions
+- **WCP** - West Coast Products; An engineering and robotics supplier known for high quality parts used in FIRST Robotics competitions
 
 - **Pneumatics** - The use of compressed air to create motion or apply force.
 

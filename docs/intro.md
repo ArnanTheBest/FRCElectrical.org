@@ -21,7 +21,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 ### Voltage, Current, and Resistance
 - The standard definition is the difference in electric potential between two points. However, this is hard to imagine visually. Think of a wire as a pipe, and the electrons flowing through it as water. Voltage would be the water pressure. It is measured in Volts (V), where a higher voltage means more pressure/potential.
 - Current, in this analogy, would be the rate at which water flows through the pipe. It is the flow of electrons going through the wire measured in Amps (A).
-- Resistance can be thought of as blockages in this pipe or as points where it gets narrow. It is the resistance of the flow of electrons measured in Ohms (omega) that slows the electrons from getting from point A to point B.
+- Resistance can be thought of as blockages in this pipe or as points where it gets narrow. It is the resistance of the flow of electrons measured in Ohms (Ω) that slows the electrons from getting from point A to point B.
 
 ### Power vs. CAN
 - Power wire is red (for positive terminals) and black (for negative and ground terminals). FRC power wires MUST be color-coded separately, as they can be dangerous when not indicated. Red and black are the most common ways to do so. They can be thought of as the blood vessels that deliver power to every part of the robot. 
