@@ -17,8 +17,6 @@ title: Battery
 === "Duracell"
     ![Duracell](/assets/Battery/Duracell.png)
 
-!!! warning
-    Duracell is known to be inconsistent, they can be better than MK, however you have to buy many, and then send back the bad ones.
 
 ## Wires/Connectors for Batteries
 * There are two main options for battery wires and battery connectors. We use 4 and 6 AWG wire for batteries and for connectors we use [SB50s](https://powerwerx.com/anderson-sb-connectors-sb50-50amp?srsltid=AfmBOooEGI9cCmnGoLNoHptg3VvKkSyAbujIvzm3Ka8k7bPd4rj6Me6m) and [SB120s](https://powerwerx.com/anderson-sb-connectors-sb120-120amp). 
