@@ -23,7 +23,7 @@ title: FRC Control System
     * Additionally, a star topology presents many issues as it is NOT AT ALL how CAN is meant to be wired.
   * Always place the resistor at the end of each loop. This will be a 120 OHM resistor in a WAGO, or if terminating at a motor with a powerpole adapter board, the Weidmuller connectors may be used.
 
-![CAN-Wiring](/assets/FRC Control System/CAN Wiring.png)
+![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png)
 
 ## Specific Electrical Components
 ### Motors
@@ -34,7 +34,7 @@ title: FRC Control System
     * Brushless: Brushless motors are like brushed motors in many ways. They can have an internal or external rotor (the diagram has an internal rotor). What you may notice about the motor is that it has no brushes. How then does it create opposite polarities? This is through an electronic circuit that detects how much the motor rotates. 
         * This makes for less contact throughout the system and a more precise transmission of power, which is why brushless motors are used throughout the world and especially in FRC. 
 
-![Brushed vs Brushless](/assets/images/brushed_vs_brushless.png)
+![BrushvBrushless](/assets/FRC-Control-System/BrushvBrushless.png)
 
 Brushed motor on left, brushless motor on right
 
