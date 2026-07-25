@@ -8,11 +8,15 @@ title: Making Connections
 This page covers everything needed for you to make successful connections in the FRC Control System
 
 ## Crimping Connectors
-* Molex (explain to cut off Dupont): This is the single best connector for CAN and low AWG power wire. It’s easy to crimp, low profile, shrouded, and pin and socket. Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
+* Molex: This is the single best connector for CAN and low AWG power wire. 
+  * It’s easy to crimp, low profile, shrouded, and pin and socket. 
+  * Two-pin Molex is the standard for integration into SystemCore and Adapter boards for Krakens. 
+  * Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster. 
 * Anderson: For higher AWG power wire, Anderson is the best connector. The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 * Powerpole adapter boards
   * As mentioned previously, these are boards for Krakens that convert the ring terminal outputs to Anderson and Molex.  
 * Ferrules: Used for wires that connect to the ports of components like the RIO/SYSTEMCORE or PDH as well as for connections that involve linear WAGOs.
+* Dupont: Dupont crimps were commonly used for Rio Connections, but are not recommended for new robots. With Systemcore, molex is recommended for connections.
 
 ### Molex 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/khB2-0bkj9Q?si=OKBMugaFJCiNT_xy" title="Molex Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
