@@ -60,7 +60,13 @@ nav = [
   "Educator's-Handbook.md",
   "Glossary.md",
   "Additional-Resources.md",
-  "Contribution.md"
+  {
+    "Contribution" = [
+      "contributions/Contribution.md",
+      "contributions/StyleGuide.md",
+      "contributions/VSCodeSetup.md"
+    ]
+  }
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize

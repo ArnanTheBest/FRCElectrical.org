@@ -42,7 +42,7 @@ title: Battery
   * For 4 AWG use the 25 setting, as 25mm^2 is equal to 4 AWG. 
   * For 6 AWG use the 16 setting with the same logic. 2 crimps for each terminal/lug is recommended for optimal grip onto the wire. 
   * This crimp takes a lot of force and may be hard for some so assistance can always be asked for.
-* Step 4 (FOR LUGS): For lugs, perform the steps described in [Battery Assembly](link), and then, being careful to not allow any metal (including the metal already on the battery) to be exposed, move forward and heat up the heat shrink.
+* Step 4 (FOR LUGS): For lugs, perform the steps described in [Battery Assembly](contributions/link), and then, being careful to not allow any metal (including the metal already on the battery) to be exposed, move forward and heat up the heat shrink.
 * Step 4 (FOR CONNECTORS): once both wires are done, place them into the connector, with red as positive and black as negative. The hook should go over the metal bit at the end and a click should be heard. To undo, use a flathead screwdriver to pry the hook over the metal bit.
 
 ## Battery Process Flowchart
