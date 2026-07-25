@@ -4,6 +4,8 @@ title: Tools & Crimps
 ---
 
 # Tools, Wire, and Crimps
+This section acts as a guide for the most bang for your buck electrical components. Whether you’re looking to improve your current tools or you’re just starting to buy dedicated tools for electrical, this is a good place to start.
+
 
 ## Ferrules
 ### Ferrule Crimper

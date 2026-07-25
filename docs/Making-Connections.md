@@ -35,7 +35,7 @@ This page covers everything needed for you to make successful connections in the
     They are HEAVILY discouraged for teams, and especially newer teams. The reason that teams usually go this route is that they’re seen as equivalent to a continuous run. In fact, soldering is a failure point on the bot, and like connectors, it needs to be properly strain relieved. 
 * Soldering is relatively easy once it's learned, but there is a learning curve, as well as more room for error than crimped connectors. Additionally, in an FRC environment it’s fast paced, if something breaks or needs to be replaced it’s extremely challenging.
 
-## Lineman's Splice
+### Lineman's Splice
 * The Lineman’s Splice also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo) is probably the highest strength solder joint, and also the one with the profile best fit for heatshrink.
   * Solder sleeves (explain why not to use them: low-melt solder, which is usually low quality, and doesn't flow well. It's just as easy as normal solder splices to get wrong if you don't apply enough heat for long enough.)
 * 221 Inline WAGOs & y/g WAGOs
