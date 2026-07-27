@@ -15,7 +15,7 @@ This page collects helpful links, guides, and external resources related to the 
 - [Zebracorns Battery Write-Up PDF](https://drive.google.com/file/d/1QlGaSKlrtTflktHJzugkRzqrJkCVzYjG/view)
 - [1678 Electrical Drive Folder](https://drive.google.com/drive/folders/1Jdl7e16HOXiOACGVmZtLeNDHAj17t55B)
 - [Hackbots document](https://docs.google.com/document/d/e/2PACX-1vRXhNGBFaXRyvpgpI6DwVJRmtWrYGaDLQynxaj2W-qCYodR0bI-kuSBheUuzqoIXxiiQxwRTgd5tvxR/pub)
-
+- [Spectrum FRC Electrical Guide](https://docs.google.com/document/d/1DWktsIyFx9LDg2FKNm5Rkt2RC0K3OhBKp4SL9KYaHAs/edit?tab=t.0#heading=h.4o25xy8bi9kn)
 
 ## General Docs
 
