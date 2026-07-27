@@ -31,7 +31,7 @@ This page collects helpful links, guides, and external resources related to the 
 
 - [Brushed vs Brushless overview](https://www.youtube.com/watch?v=wAtN3SEYSco)
 - [Basics of FRC Electrical](https://www.youtube.com/watch?v=GvtpIHAQKxs)
-- [FRC Controls System Wiring](https://www.youtube.com/watch?v=Xd5Qq_bMl7k)
+- [FRC Control System Wiring](https://www.youtube.com/watch?v=Xd5Qq_bMl7k)
 - [How to Wire a Robot](https://www.youtube.com/watch?v=lGgIhxYuSHM)
 
 
