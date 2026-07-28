@@ -14,7 +14,7 @@ This page collects helpful links, guides, and external resources related to the 
 - [LYNK Library of Knowledge Electrical Docs](https://docs.lynkrobotics.org/electrical/#gsc.tab=0)
 - [ZebraPower 2.0 - The Zebracorns's Battery Paper Update (Team 900)](https://drive.google.com/file/d/1QlGaSKlrtTflktHJzugkRzqrJkCVzYjG/view)
 - [1678 Electrical Drive Folder](https://drive.google.com/drive/folders/1Jdl7e16HOXiOACGVmZtLeNDHAj17t55B)
-- [Hackbots Electrical Standard Practices Guide](https://docs.google.com/document/d/e/2PACX-1vRXhNGBFaXRyvpgpI6DwVJRmtWrYGaDLQynxaj2W-qCYodR0bI-kuSBheUuzqoIXxiiQxwRTgd5tvxR/pub)
+- [Hackbots Electrical Standard Practices Guide 2024-25](https://docs.google.com/document/d/e/2PACX-1vRXhNGBFaXRyvpgpI6DwVJRmtWrYGaDLQynxaj2W-qCYodR0bI-kuSBheUuzqoIXxiiQxwRTgd5tvxR/pub)
 
 
 ## General Docs
