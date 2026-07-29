@@ -1,0 +1,44 @@
+<svg width="960" height="520" viewBox="0 0 960 520" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Parallel vs series circuit wiring</title>
+<desc>A battery on the left connects to two lightbulbs. In the parallel arrangement both bulbs tap independently into shared positive and negative rails. In the series arrangement the bulbs are chained one after another along a single loop on the far side.</desc>
+
+<defs>
+  <g id="battery">
+    <rect x="-35" y="-65" width="70" height="130" rx="16" fill="#0c447c" stroke="#7c9dfa" stroke-width="2.5"/>
+    <rect x="-14" y="-81" width="28" height="16" rx="6" fill="#0c447c" stroke="#7c9dfa" stroke-width="2.5"/>
+  </g>
+  <g id="bulb">
+    <circle r="36" fill="#EF9F27" opacity="0.22"/>
+    <rect x="-10" y="15" width="20" height="14" rx="4" fill="#6b6a66" stroke="#c9c7c0" stroke-width="1.5"/>
+    <line x1="-8" y1="19" x2="8" y2="19" stroke="#c9c7c0" stroke-width="1.5"/>
+    <line x1="-8" y1="24" x2="8" y2="24" stroke="#c9c7c0" stroke-width="1.5"/>
+    <circle r="24" fill="#e8ab3f" stroke="#7c9dfa" stroke-width="2.5"/>
+    <path d="M -8 6 L -3 -4 L 3 6 L 8 -4" fill="none" stroke="#7c9dfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+</defs>
+
+<rect x="24" y="24" width="912" height="472" rx="28" ry="28" fill="none" stroke="#7c9dfa" stroke-width="3"/>
+
+<line x1="480" y1="110" x2="480" y2="430" stroke="#4a4a50" stroke-width="1.5" stroke-dasharray="5 6"/>
+
+<text x="250" y="90" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#7c9dfa">Parallel</text>
+<text x="710" y="90" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="700" fill="#7c9dfa">Series</text>
+
+<path d="M165,199 L165,166 Q165,150 181,150 L384,150 Q400,150 400,166 L400,256" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round"/>
+<path d="M305,150 L305,256" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round"/>
+<path d="M165,361 L165,394 Q165,410 181,410 L384,410 Q400,410 400,394 L400,309" fill="none" stroke="#e8e8ec" stroke-width="3" stroke-linecap="round"/>
+<path d="M305,309 L305,410" fill="none" stroke="#e8e8ec" stroke-width="3" stroke-linecap="round"/>
+
+<use href="#battery" x="165" y="280"/>
+<use href="#bulb" x="305" y="280"/>
+<use href="#bulb" x="400" y="280"/>
+
+<path d="M560,199 L560,166 Q560,150 576,150 L814,150 Q830,150 830,166 L830,191" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round"/>
+<path d="M830,244 L830,321" fill="none" stroke="#ff7a7a" stroke-width="3" stroke-linecap="round"/>
+<path d="M830,374 L830,394 Q830,410 814,410 L576,410 Q560,410 560,394 L560,361" fill="none" stroke="#e8e8ec" stroke-width="3" stroke-linecap="round"/>
+
+<use href="#battery" x="560" y="280"/>
+<use href="#bulb" x="830" y="215"/>
+<use href="#bulb" x="830" y="345"/>
+
+</svg>
