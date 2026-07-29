@@ -45,5 +45,3 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-light.svg#only-light)
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-dark.svg#only-dark)
-
-Parallel Circuit on the left, Series Circuit on the right
