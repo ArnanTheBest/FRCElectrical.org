@@ -1,5 +1,5 @@
 ---
-icon: lucide/zap
+icon: frc-elec-zap
 title: FRC Control System
 ---
 
