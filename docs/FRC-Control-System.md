@@ -136,7 +136,7 @@ Power distribution boards are how power gets around the robot. They can range fr
 
     * [PDH](https://www.revrobotics.com/rev-11-1850/) is often considered the best quality option for teams that want a robust and modern distribution board.
 
-=== "CTRE's Power Distibution Panel (PDP) 2.0"
+=== "CTRE's Power Distribution Panel (PDP) 2.0"
 
     ![PDP2.0](/assets/FRC-Control-System/PDP-2.png)
 
