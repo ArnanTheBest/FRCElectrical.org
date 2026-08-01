@@ -43,5 +43,5 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 #### Series
 - Components are chained together from positive to negative to positive, etc.
 
-![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-light.svg#only-light)
-![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-dark.svg#only-dark)
+![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Light.png#only-light)
+![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Dark.png#only-dark)
