@@ -377,3 +377,7 @@ generator = false
 [project.markdown_extensions.pymdownx.snippets]
 auto_append = ["docs/includes/Glossary.md"]
 
+[project.extra.analytics]
+provider = "google"
+property = "G-XJVLV3KFLP"
+
