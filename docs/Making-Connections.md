@@ -55,3 +55,10 @@ This page covers everything needed for you to make successful connections in the
 * 221 Inline WAGOs & y/g WAGOs
   * Solder connections are not advised as they are fragile and do not typically stand through much strain
   * Crimp connections are recommended
+
+## Tug Test
+* A tug test is a method of testing the strength of a connection
+* It is recommended to perform a tug test on all connections to ensure they are secure
+* This is especially important for connections that are subject to stress
+* Performing tug tests on connections can help identify weak points in the robot's wiring before it is on the competition field.
+* You do not need to pull as hard as possible, just enough to ensure the connection is secure.
