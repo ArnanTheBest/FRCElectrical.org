@@ -29,6 +29,9 @@ This page covers everything needed for you to make successful connections in the
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VYLnkpxGyCQ?si=07sZZAG_dudaspIo" title="Ferrule Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NSqPHQ1zQco" title="How to solder two wires together | Crutchfield" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Solder
 * Solder connections, as opposed to crimped connections, can be made for connections between wires
 !!! warning
@@ -40,6 +43,10 @@ This page covers everything needed for you to make successful connections in the
 * Solder can be poor conductor which can be brittle when done improperly
 * Similarly, for newer teams, it requires more of a learning curve and practice to get right.
 * Low gauge wire should not be soldered as it is usually a failure point on the robot. Refrain from soldering battery wire.
+- **Solder Sleeves**: Solder sleeves are not recommended for FRC robots.
+  - They use low-melting-point solder and rely on heat to both solder the wire and shrink the tubing, making it difficult to achieve a consistent, reliable connection.
+  - If not heated correctly, they can create weak electrical or mechanical joints that may fail under the vibration and impacts experienced during competition.
+- Properly crimped connectors are the preferred solution, while hand-soldered splices with heat shrink should only be used when a crimped connection is not practical.
 
 ### When Soldering Might Be Acceptable
 * For temporary connections
@@ -55,6 +62,26 @@ This page covers everything needed for you to make successful connections in the
 * 221 Inline WAGOs & y/g WAGOs
   * Solder connections are not advised as they are fragile and do not typically stand through much strain
   * Crimp connections are recommended
+
+### WAGO Connectors
+
+- WAGO connectors provide quick connections without screws, solder, or crimps.
+- They have two primary types: inline and Y/G.
+- 221 Inline WAGOs use a lever mechanism to open and close the clamp.
+- Wire enters from opposite ends to create a straight-line splice.
+- Connects exactly two wires to extend in a single line.
+- Y/G WAGOs use a push-in mechanism with no levers.
+- They are used to bundle multiple grounding wires together.
+- Wires enter from the same side to create a parallel connection.
+- This image shows an inline WAGO connector.
+
+![Inline WAGO](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4rxyzN_EOWNZROBWW0aYcMufoc3x3eFZhPSzDbjsbtg&s=10)
+
+- This image shows a Y/G WAGO connector.
+
+![Y/G WAGO](https://static.grainger.com/rp/s/is/image/Grainger/2773-404__798HM9_v1?$adapimg$&hei=536&wid=536)
+>>>>>>> main
+
 
 ## Tug Test
 * A tug test is a method of testing the strength of a connection
