@@ -21,12 +21,13 @@ title: FRC Control System
   * Star topology (not recommended): This is the method used to branch the CAN bus by each individual component. This is used by some teams because in a normal CAN bus, if one component loses a connection, they all do. 
     * With a Star topology, each component has its own individual “CAN bus”. This is not recommended at all in modern FRC, as the introduction of SystemCore allows you to split up CAN buses much further than originally. 
     * Additionally, a star topology presents many issues as it is NOT AT ALL how CAN is meant to be wired.
-  * Always place the resistor at the end of each loop. This will be a 120 OHM resistor in a WAGO, or if terminating at a motor with a powerpole adapter board, the Weidmuller connectors may be used.
+  * CAN loops always need to be terminated using a 120 OHM resistor to prevent signal reflection. Read about CAN termination below.
 
 ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png)
 
 ### Terminating Resistors
 There are many ways to terminate a CAN bus, but the most common ways are:
+
 * Using a 120 OHM resistor in a WAGO
 * Using the Weidmuller connectors on a motor with a powerpole adapter board
 * Soldering a 120 OHM resistor
