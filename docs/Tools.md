@@ -76,6 +76,9 @@ This section acts as a guide for the most bang for your buck electrical componen
 
 <hr>
 
+!!! warning
+    Ensure that mated crimps have the same plating material. Not doing so can lead to galvanic corrosion on the crimps and make them wear down faster.
+
 ## Ring Terminals
 !!! note
 
