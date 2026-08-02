@@ -30,10 +30,23 @@ This page covers everything needed for you to make successful connections in the
 
 
 ## Solder
-* Solder connections, as opposed to crimped connections, are sometimes weaker and less reliable. 
+* Solder connections, as opposed to crimped connections, can be made for connections between wires
 !!! warning
-    They are HEAVILY discouraged for teams, and especially newer teams. The reason that teams usually go this route is that they’re seen as equivalent to a continuous run. In fact, soldering is a failure point on the bot, and like connectors, it needs to be properly strain relieved. 
-* Soldering is relatively easy once it's learned, but there is a learning curve, as well as more room for error than crimped connectors. Additionally, in an FRC environment it’s fast paced, if something breaks or needs to be replaced it’s extremely challenging.
+    FRCElectrical.org does not recommend soldering for FRC robots. 
+
+### Why Soldering is Not Recommended
+* They are more prone to failure under vibration and stress
+* Repairing solder joints is more time-consuming and difficult in competition stress
+* Solder can be poor conductor which can be brittle when done improperly
+* Similarly, for newer teams, it requires more of a learning curve and practice to get right.
+
+### When Soldering Might Be Acceptable
+* For temporary connections
+* In Wiring LEDs, where you need to connect an LED strip to the CANchain (if applicable) or power
+* To create custom 120 Ohm Resistors, which are used to terminate the CAN bus
+* Soldering is a skill that is used in the workforce. FRCElectrical.org does not recommend it for newer teams that wish to create connections on an FRC Robot.
+  * However, if you are experienced with soldering, it can be a useful skill to have (and teach!)
+
 
 ### Lineman's Splice
 * The Lineman’s Splice also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo) is probably the highest strength solder joint, and also the one with the profile best fit for heatshrink.
