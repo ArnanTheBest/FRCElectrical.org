@@ -80,7 +80,6 @@ This page covers everything needed for you to make successful connections in the
 - This image shows a Y/G WAGO connector.
 
 ![Y/G WAGO](https://static.grainger.com/rp/s/is/image/Grainger/2773-404__798HM9_v1?$adapimg$&hei=536&wid=536)
->>>>>>> main
 
 
 ## Tug Test
