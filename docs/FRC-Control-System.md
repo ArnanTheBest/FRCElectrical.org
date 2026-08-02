@@ -34,8 +34,8 @@ title: FRC Control System
     * Brushless: Brushless motors are like brushed motors in many ways. They can have an internal or external rotor (the diagram has an internal rotor). What you may notice about the motor is that it has no brushes. How then does it create opposite polarities? This is through an electronic circuit that detects how much the motor rotates. 
         * This makes for less contact throughout the system and a more precise transmission of power, which is why brushless motors are used throughout the world and especially in FRC. 
 
-![BrushvBrushless](/assets/FRC-Control-System/BrushvBrushless-transparent.png#only-light)
-![BrushvBrushless](/assets/FRC-Control-System/BrushvBrushless.png#only-dark)
+![Brushed-Brushless-Light](/assets/FRC-Control-System/Brushed-Brushless-Light.png#only-light)
+![Brushed-Brushless-Dark](/assets/FRC-Control-System/Brushed-Brushless-Dark.png#only-dark)
 
 Brushed motor on left, brushless motor on right
 
