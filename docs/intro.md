@@ -37,12 +37,11 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
     ![Power-Wire](/assets/FRC-Control-System/Power-Wire.png){ width="50%" }
 
 ### Parallel vs Series
-#### Paralell
+#### Parallel
 - Negative to Negative and Positive to Positive
 
 #### Series
 - Components are chained together from positive to negative to positive, etc.
 
-![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit.png)
-
-Parallel Circuit on the left, Series Circuit on the right
+![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Light.png#only-light)
+![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Dark.png#only-dark)

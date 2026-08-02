@@ -1,5 +1,5 @@
 ---
-icon: lucide/zap
+icon: frc-elec-zap
 title: FRC Control System
 ---
 
@@ -34,7 +34,8 @@ title: FRC Control System
     * Brushless: Brushless motors are like brushed motors in many ways. They can have an internal or external rotor (the diagram has an internal rotor). What you may notice about the motor is that it has no brushes. How then does it create opposite polarities? This is through an electronic circuit that detects how much the motor rotates. 
         * This makes for less contact throughout the system and a more precise transmission of power, which is why brushless motors are used throughout the world and especially in FRC. 
 
-![BrushvBrushless](/assets/FRC-Control-System/BrushvBrushless.png)
+![Brushed-Brushless-Light](/assets/FRC-Control-System/Brushed-Brushless-Light.png#only-light)
+![Brushed-Brushless-Dark](/assets/FRC-Control-System/Brushed-Brushless-Dark.png#only-dark)
 
 Brushed motor on left, brushless motor on right
 
@@ -135,7 +136,7 @@ Power distribution boards are how power gets around the robot. They can range fr
 
     * [PDH](https://www.revrobotics.com/rev-11-1850/) is often considered the best quality option for teams that want a robust and modern distribution board.
 
-=== "CTRE's Power Distibution Panel (PDP) 2.0"
+=== "CTRE's Power Distribution Panel (PDP) 2.0"
 
     ![PDP2.0](/assets/FRC-Control-System/PDP-2.png)
 

@@ -18,7 +18,7 @@ The comprehensive learning guide and technical reference for FRC Electrical.
 </div>
 
 <div class="hero-graphic" markdown>
-<span class="hero-icon" aria-hidden="true">:lucide-zap:</span>
+<span class="hero-icon" aria-hidden="true">:frc-elec-zap:</span>
 </div>
 
 </div>
