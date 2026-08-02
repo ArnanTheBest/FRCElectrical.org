@@ -16,23 +16,23 @@ This page covers everything needed for you to make successful connections in the
 - Using the TPA is also heavily recommended, as it raises the terminal retention from 17.5 N to 50+N, as seen in the poster.
 - This image shows the Molex SL connector.
 
-![Molex SL](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbY5Upu45tyr62t_-nM5gJHHmqGhr9bmLele0pXYLw9A&s=10)
+![Molex SL](/assets/making-connections/Molex_SL.png)
 
 - **Anderson Connectors**: For lower AWG power wire, Anderson connectors are the preferred choice, with SB50 for battery wires and Powerpole for 10-12 AWG wires.
 - The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 - This image shows the Anderson SB50 connector.
 
-![Anderson SB50](https://assets-fe147638ed.cdn.insitecloud.net/1f3a03fa5488f35_lg.jpg)
+![Anderson SB50](/assets/making-connections/SB-50.png)
 
 - This image shows the Anderson Powerpole connector.
 
-![Anderson Powerpole](https://www.gigaparts.com/media/catalog/product/cache/002dc70ccef261c78c46589b619436fc/9/8/980e33c2-6ce3-4edd-a635-9ef57806ce17-3_png_webp_4.webp)
+![Anderson Powerpole](/assets/making-connections/Anderson-Powerpole.png)
 
 - **Powerpole Adapter Boards**
 - These boards convert Kraken ring-terminal outputs into Anderson Powerpole and Molex SL connections, making wiring cleaner and easier to service.
 - This image shows the Powerpole adapter board.
 
-![Powerpole Adapter Board](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmi8_y_cLv1F3oIzOSx2JXPnYjBXtA_f6PogqZAShJoItHfNVOiXr3GzI&s=10)
+![Powerpole Adapter Board](/assets/making-connections/Powerpole-Adapter_Board.png)
 
 - **JST**: JST connectors are commonly used for low-current signal wiring.
 - These can be found in sensors, encoders, LEDs, and other low-power devices.
@@ -40,18 +40,18 @@ This page covers everything needed for you to make successful connections in the
 - The most common type of JST connector in FRC is the JST-PH series.
 - This image shows the JST-PH connector.
 
-![JST-PH](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQql3gooLNRTF9gCNHKVH2HvlCe0bG9IlfVr6fiK4CiRA&s=10)
+![JST-PH](/assets/making-connections/JST.png)
 
 - **Ferrules**: Ferrules are used for stranded wires that connect to the ports of components like the RIO or PDH as well as for connections that involve linear WAGOs.
 - They prevent stray wires from causing short circuits.
 - This image shows a ferrule.
 
-![Ferrule](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxi3XPpV1t9o5zGRi1d5YR7uz9F7_ro9FQnf0fG4KZg&s=10)
+![Ferrule](/assets/making-connections/Ferrule.png)
 
 - **Dupont**: Dupont crimps were commonly used for roboRIO connections, but are not recommended for new robots. With Systemcore, Molex SL is recommended for connections because of its locking latches that prevent wires from accidental disconnections.
 - This image shows a Dupont connector.
 
-![Dupont](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBSC7BEHRt9ZGpeSuBkETSb1yweyJ6FAqvS7fHjSXayw&s=10)
+![Dupont](/assets/making-connections/Dupont.png)
 
 ### Molex SL
 
