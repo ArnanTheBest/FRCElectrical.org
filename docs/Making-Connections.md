@@ -72,10 +72,13 @@ This page covers everything needed for you to make successful connections in the
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VYLnkpxGyCQ?si=07sZZAG_dudaspIo" title="Ferrule Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NSqPHQ1zQco" title="How to solder two wires together | Crutchfield" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Solder
 * Solder connections, as opposed to crimped connections, can be made for connections between wires
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NSqPHQ1zQco" title="How to solder two wires together | Crutchfield" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 !!! warning
     FRCElectrical.org does not recommend soldering for FRC robots. 
 
