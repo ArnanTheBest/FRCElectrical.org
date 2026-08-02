@@ -1,0 +1,22 @@
+name: Vale Linter
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test:
+    name: Vale
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Vale
+        uses: vale-cli/vale-action@2.1.2
+        with:
+          files: 'docs/' 
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
