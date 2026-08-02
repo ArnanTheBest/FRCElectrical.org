@@ -39,7 +39,7 @@ There are many ways to terminate a CAN bus, but the most common ways are:
 === "Wago Termination"
     ![Wago-Termination](/assets/FRC-Control-System/WagoTermination.png){ width="50%" }
 === "SWYFT CANender"
-    ![SWYFT-CANender](/assets/FRC-Control-System/SWYFT-CANender-removebg-preview.png){ width="50%" }
+    ![SWYFT-CANender](/assets/FRC-Control-System/SWYFT-CANender.png){ width="50%" }
 
 
 ## Specific Electrical Components
