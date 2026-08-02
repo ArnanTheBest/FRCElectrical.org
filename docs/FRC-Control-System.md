@@ -25,6 +25,23 @@ title: FRC Control System
 
 ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png)
 
+### Terminating Resistors
+There are many ways to terminate a CAN bus, but the most common ways are:
+* Using a 120 OHM resistor in a WAGO
+* Using the Weidmuller connectors on a motor with a powerpole adapter board
+* Soldering a 120 OHM resistor
+* Using a 120 OHM resistor in a Power Distribution Panel (PDP) or Power Distribution Hub (PDH)
+* Using the [Swyft](https://swyftrobotics.com/electrical/swyft-canender) CANender
+
+!!! info "Terminating a CAN Bus"
+    When terminating a CAN bus, it is important to ensure that the resistor is placed at the end of the loop. This will prevent any signal reflection and ensure that the CAN bus is properly terminated.
+
+=== "Wago Termination"
+    ![Wago-Termination](/assets/FRC-Control-System/WagoTermination.png){ width="50%" }
+=== "SWYFT CANender"
+    ![SWYFT-CANender](/assets/FRC-Control-System/SWYFT-CANender-removebg-preview.png){ width="50%" }
+
+
 ## Specific Electrical Components
 ### Motors
 * Motors are the joints of the robot; they control every moving and rotating component on most modern robots. Thus, wiring them is very important. There are two types of motors, brushed and brushless. 
@@ -37,6 +54,8 @@ title: FRC Control System
 ![BrushvBrushless](/assets/FRC-Control-System/BrushvBrushless.png)
 
 Brushed motor on left, brushless motor on right
+
+
 
 #### Common FRC Motors
 ##### WCP's Kraken
