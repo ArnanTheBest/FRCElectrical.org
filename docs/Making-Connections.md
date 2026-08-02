@@ -39,6 +39,7 @@ This page covers everything needed for you to make successful connections in the
 * Repairing solder joints is more time-consuming and difficult in competition stress
 * Solder can be poor conductor which can be brittle when done improperly
 * Similarly, for newer teams, it requires more of a learning curve and practice to get right.
+* Low gauge wire should not be soldered as it is usually a failure point on the robot. Refrain from soldering battery wire.
 
 ### When Soldering Might Be Acceptable
 * For temporary connections
