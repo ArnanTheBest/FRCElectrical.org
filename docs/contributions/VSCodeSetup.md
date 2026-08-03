@@ -12,6 +12,7 @@ Our site runs on **Zensical**, the modern, blazing-fast static site generator bu
 ## 1. Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
+
 *   **Git:** To clone the repository. ([Download Git](https://git-scm.com/))
 *   **Python 3.10 or newer:** Required to run Zensical. ([Download Python](https://www.python.org/downloads/))
 
@@ -64,11 +65,6 @@ With your virtual environment active, install Zensical via `pip`. Zensical is wr
 
 ```bash
 pip install zensical
-```
-
-*Tip: If the project includes additional custom modules or plugins, you may also need to install the project's specific requirements:*
-```bash
-pip install -r requirements.txt
 ```
 
 ---
