@@ -102,11 +102,16 @@ This page covers everything needed for you to make successful connections in the
 
 
 ### Lineman's Splice
-* The Lineman’s Splice also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo) is probably the highest strength solder joint, and also the one with the profile best fit for heatshrink.
-  * Solder sleeves (explain why not to use them: low-melt solder, which is usually low quality, and doesn't flow well. It's just as easy as normal solder splices to get wrong if you don't apply enough heat for long enough.)
-* 221 Inline WAGOs & y/g WAGOs
-  * Solder connections are not advised as they are fragile and do not typically stand through much strain
-  * Crimp connections are recommended
+* The Lineman Splice, also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo), is one of the most widespread types of solder splices in use due to it's reliability and ease of use. The following figure is taken from NASA-STD-8739.4
+
+![Lineman Splice](/assets/making-connections/Lineman-Splice.png)
+
+* Tips for soldering a lineman splice:
+    * The stripped section of wire should be pre-tinned to form solid sections with just enough solder to hold the strands together.
+    * The wires should be wrapped around each other as shown. The wraps should be tight without overlapping, then trimmed flush. The wire should not overlap the insulation.
+    * Solder should be applied to the wraps. The entire connection should be covered with solder, but the underlying shape should still be visible. 
+
+* Like all soldered connections, the solder creates a more rigid section of wire which is more vulnerable to breaking. When routing and securing wires, the wire should be secured to prevent repeated bending of the soldered area.  
 
 ### WAGO Connectors
 
