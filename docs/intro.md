@@ -47,10 +47,11 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 
 ### Parallel vs Series
 #### Parallel
-- Negative to Negative and Positive to Positive
+- Negative to Negative and Positive to Positive. This allows for multiple paths for current to flow, increasing the total current capacity and decreasing susceptability to failure. If one path fails, the others can still carry current.
 
 #### Series
-- Components are chained together from positive to negative to positive, etc.
+- Components are chained together from positive to negative to positive, etc. The flow of electricity is the same through all components, but the voltage is divided among them. If one component fails, the entire circuit breaks. 
+  * In FRC, this is commonly referred to as a Daisy Chain.
 
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Light.png#only-light)
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Dark.png#only-dark)
