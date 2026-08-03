@@ -13,6 +13,7 @@ This may come as a shock, but electronics are dangerous. A single mistake could 
 - Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. You don't want to get shocked or have a wire snap and hit you in the eye.
 - Don’t touch the metals of opposite polarity wires together, especially for batteries as it can cause sparks and flame.
 - Don’t allow metal shavings to get into components: Use electrical tape to cover open holes in components. This prevents short circuits and damage to sensitive parts.
+  - A short circuit, typically known as a blow or short, is when two wires with different polarities have contact, causing a large current to flow and potentially causing fire or damage to components.
 - Keep wires away from things that can break them like motor splines or the insides of swerve modules. This prevents damage to the wires and potential short circuits.
 
 ## Electrical Theory
