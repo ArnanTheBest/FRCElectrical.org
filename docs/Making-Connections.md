@@ -18,6 +18,7 @@ This page covers everything needed for you to make successful connections in the
 
 ![Molex SL](/assets/making-connections/Molex_SL.png)
 
+
 - **Anderson Connectors**: For lower AWG power wire, Anderson connectors are the preferred choice, with SB50 for battery wires and Powerpole for 10-12 AWG wires.
 - The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 - This image shows the Anderson SB50 connector.
@@ -59,9 +60,22 @@ This page covers everything needed for you to make successful connections in the
 
 - [Crimping Molex SL (Guide)](https://www.molex.com/content/dam/molex/molex-dot-com/en_us/pdf/general/Final_Crimp_Poster_FIRST.pdf?inline)
 
+- The following pinout is compatible with both SystemCore and the Powerpole adapter boards. It is recommended to use a consistent pinout throughout the robot to avoid having to rewire connections if a CAN device needs to be replaced.
+
+![Molex SL Standard CAN Pinout](/assets/making-connections/Molex-SL-Figure.png)
+
+
 ### Anderson Powerpole
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NwgLyCA1N-4?si=NxpvXeXWWQa6AiLu" title="Anderson Powerpole Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- To prevent accidentally feeding a device -12V instead of +12V, it is recommended to use standard Anderson Powerpole pinout. This standard has been adopted by amateur radio organizations, the Powerpole adapter board, the Powerpole Fused Distribution Board, and permanently bonded housings. 
+
+![Powerpole Polarity](/assets/making-connections/Powerpole-Red-Right-Figure.png)
+
+- Below is a quality guide for Anderson Powerpole crimps. 
+
+![Powerpole Quality](/assets/making-connections/Powerpole-Quality-Figure.png)
 
 ### Anderson SB50
 
