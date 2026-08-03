@@ -85,13 +85,13 @@ This page covers everything needed for you to make successful connections in the
 ### Why Soldering is Not Recommended
 * They are more prone to failure under vibration and stress
 * Repairing solder joints is more time-consuming and difficult in competition stress
-* Solder can be poor conductor which can be brittle when done improperly
+* Solder can be poor conductor which can be a brittle connection.
 * Similarly, for newer teams, it requires more of a learning curve and practice to get right.
-* Low gauge wire should not be soldered as it is usually a failure point on the robot. Refrain from soldering battery wire.
+* Large gauge wire should not be soldered as it is typically a failure point on the robot. Refrain from soldering battery wire as it is incredibly hard to apply enough heat to create a proper joint.
 - **Solder Sleeves**: Solder sleeves are not recommended for FRC robots.
   - They use low-melting-point solder and rely on heat to both solder the wire and shrink the tubing, making it difficult to achieve a consistent, reliable connection.
   - If not heated correctly, they can create weak electrical or mechanical joints that may fail under the vibration and impacts experienced during competition.
-- Properly crimped connectors are the preferred solution, while hand-soldered splices with heat shrink should only be used when a crimped connection is not practical.
+- Properly crimped connectors are the preferred solution.
 
 ### When Soldering Might Be Acceptable
 * For temporary connections
