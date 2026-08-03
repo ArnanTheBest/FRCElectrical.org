@@ -43,7 +43,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 - The lower the AWG number, the thicker the wire.
 - Thicker wires can carry more current and have less resistance.
 - In FRC, your thickest wire is somewhere between 2-6 AWG. This is typically used for battery connections.
-- For smaller components, you'll typically see 22 AWG wires.
+- For smaller components, you'll typically see 22 AWG wires (CAN, PWM, etc)
 
 ### Parallel vs Series
 #### Parallel
