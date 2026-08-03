@@ -8,12 +8,12 @@ title: Intro to FRC Electrical
 ## Safety
 This may come as a shock, but electronics are dangerous. A single mistake could lead to serious injury, and it is vital to learn how to follow proper procedure when handling electronics.
 
-- When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful
-- Never hold batteries from the wires. Always hold them from the body.
-- Always wear PPE when handling electronics. This includes at the bare minimum safety glasses.
+- When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. A battery spilling is dangerous for everyone because it can cause chemical burns and eye damage if untreated
+- Never hold batteries from the wires. Always hold them from the body. By holding batteries from their wires, you are wearing down the connection between the wire and the battery which can be detrimental for performance.
+- Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. You don't want to get shocked or have a wire snap and hit you in the eye.
 - Don’t touch the metals of opposite polarity wires together, especially for batteries as it can cause sparks and flame.
-- Don’t allow metal shavings to get into components: Electrical tape open holes.
-- Keep wires away from things that can break them like motor splines or the insides of swerve modules.
+- Don’t allow metal shavings to get into components: Use electrical tape to cover open holes in components. This prevents short circuits and damage to sensitive parts.
+- Keep wires away from things that can break them like motor splines or the insides of swerve modules. This prevents damage to the wires and potential short circuits.
 
 ## Electrical Theory
 While electrical isn’t overly complex and the theory is rarely used in FRC electrical, a basic understanding is good to know.
