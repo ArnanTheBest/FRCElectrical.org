@@ -8,7 +8,7 @@ title: Intro to FRC Electrical
 ## Safety
 This may come as a shock, but electronics are dangerous. A single mistake could lead to serious injury, and it is vital to learn how to follow proper procedure when handling electronics.
 
-- When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. A battery spilling is dangerous for everyone because it can cause chemical burns and eye damage if untreated
+- A battery spilling is dangerous for everyone because it can cause chemical burns and damage if untreated. When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. 
 - Never hold batteries from the wires. Always hold them from the body. By holding batteries from their wires, you are wearing down the connection between the wire and the battery which can be detrimental for performance.
 - Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. You don't want to get shocked or have a wire snap and hit you in the eye.
 - Don’t touch the metals of opposite polarity wires together, especially for batteries as it can cause sparks and flame.
@@ -31,8 +31,10 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Strain relief: Strain relief is when you give wiring room to "breathe". Allowing it not to be stressed and potentially rip out connections in wiring. This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations. 
 - PWM: "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
     - Ports for this type of connection can be found on the RoboRIO
+    - Note that the RoboRIO is not in use as of the 2027 FRC season. Systemcore is the new FRC Control System Hub
 - I2C: "Inter-Integrated Circuit" - two-wire signaling to send any value between 0-100%
     - Ports for this type of connection can be found on the RoboRIO
+    - Note that the RoboRIO is not in use as of the 2027 FRC season. Systemcore is the new FRC Control System Hub
 
 
 === "CAN Wiring"
@@ -44,16 +46,20 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 - AWG is a standard for measuring wire gauge in the United States.
 - The lower the AWG number, the thicker the wire.
 - Thicker wires can carry more current and have less resistance.
-- In FRC, your thickest wire is somewhere between 2-6 AWG. This is typically used for battery connections.
-- For smaller components, you'll typically see 22 AWG wires (CAN, PWM, etc)
+- When choosing wire gauge, consider the current capacity and voltage drop and ensure that the wire you choose follows the guidelines depending on the application
+  - In FRC, your thickest wire is somewhere between 2-6 AWG. This is typically used for battery connections.
+    - These wires carry high current and need to be thick to handle the load.
+  - For smaller components, you'll typically see 22 AWG wires (CAN, PWM, etc)
+    - These wires carry lower current and can be thinner.
+  - Other components, like motors, will typically bear 10-12 AWG wires.
 
 ### Parallel vs Series
 #### Parallel
-- Negative to Negative and Positive to Positive. This allows for multiple paths for current to flow, increasing the total current capacity and decreasing susceptability to failure. If one path fails, the others can still carry current.
+- Negative to Negative and Positive to Positive. This allows for multiple paths for current to flow, increasing the total current capacity.
 
 #### Series
-- Components are chained together from positive to negative to positive, etc. The flow of electricity is the same through all components, but the voltage is divided among them. If one component fails, the entire circuit breaks. 
-  * In FRC, this is commonly referred to as a Daisy Chain.
+- Components are chained together from positive to negative to positive, etc. The flow of electricity is the same through all components, but the voltage is divided among them. 
+
 
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Light.png#only-light)
 ![Parallel-Series-Circuit](/assets/Intro to FRC Electrical/Parallel-Series-Circuit-Dark.png#only-dark)
