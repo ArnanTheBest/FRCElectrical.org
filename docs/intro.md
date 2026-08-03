@@ -38,6 +38,13 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 === "Power Wiring"
     ![Power-Wire](/assets/FRC-Control-System/Power-Wire.png){ width="50%" }
 
+### AWG (American Wire Gauge)
+- AWG is a standard for measuring wire gauge in the United States.
+- The lower the AWG number, the thicker the wire.
+- Thicker wires can carry more current and have less resistance.
+- In FRC, your thickest wire is somewhere between 2-6 AWG. This is typically used for battery connections.
+- For smaller components, you'll typically see 22 AWG wires.
+
 ### Parallel vs Series
 #### Parallel
 - Negative to Negative and Positive to Positive
