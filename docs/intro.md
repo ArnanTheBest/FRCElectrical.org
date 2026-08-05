@@ -33,9 +33,12 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Strain relief: Strain relief is when you give wiring room to "breathe". Allowing it not to be stressed and potentially rip out connections in wiring. This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations. 
 - PWM: "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
     - Ports for this type of connection can be found on the RoboRIO
+      - The functionality for this, however, can be found in the Smart I/O ports on the Systemcore
+
     - Note that the RoboRIO is not in use as of the 2027 FRC season. Systemcore is the new FRC Control System Hub
 - I2C: "Inter-Integrated Circuit" - two-wire signaling to send any value between 0-100%
     - Ports for this type of connection can be found on the RoboRIO
+      - The functionality for this, however, can be found in the Smart I/O ports on the Systemcore
     - Note that the RoboRIO is not in use as of the 2027 FRC season. Systemcore is the new FRC Control System Hub
 
 
