@@ -51,7 +51,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 - When choosing wire gauge, consider the current capacity and voltage drop and ensure that the wire you choose follows the guidelines depending on the application
   - In FRC, your thickest wire is somewhere between 2-6 AWG. This is typically used for battery connections.
     - These wires carry high current and need to be thick to handle the load.
-  - For smaller components, you'll typically see 22 AWG wires (CAN, PWM, etc)
+  - For smaller components, you'll typically see 18-22 AWG wires (CAN, PWM, etc)
     - These wires carry lower current and can be thinner.
   - Other components, like motors, will typically bear 10-12 AWG wires.
 
