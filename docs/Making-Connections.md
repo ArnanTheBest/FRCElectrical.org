@@ -18,6 +18,7 @@ This page covers everything needed for you to make successful connections in the
 
 ![Molex SL](/assets/making-connections/Molex_SL.png)
 
+
 - **Anderson Connectors**: For lower AWG power wire, Anderson connectors are the preferred choice, with SB50 for battery wires and Powerpole for 10-12 AWG wires.
 - The TRIcrimp is recommended for crimping, as well as the tin-plated connectors.
 - This image shows the Anderson SB50 connector.
@@ -59,9 +60,22 @@ This page covers everything needed for you to make successful connections in the
 
 - [Crimping Molex SL (Guide)](https://www.molex.com/content/dam/molex/molex-dot-com/en_us/pdf/general/Final_Crimp_Poster_FIRST.pdf?inline)
 
+- The following pinout is compatible with both SystemCore and the Powerpole adapter boards. It is recommended to use a consistent pinout throughout the robot to avoid having to rewire connections if a CAN device needs to be replaced.
+
+![Molex SL Standard CAN Pinout](/assets/making-connections/Molex-SL-Figure.png)
+
+
 ### Anderson Powerpole
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NwgLyCA1N-4?si=NxpvXeXWWQa6AiLu" title="Anderson Powerpole Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- To prevent accidentally feeding a device -12V instead of +12V, it is recommended to use standard Anderson Powerpole pinout. This standard has been adopted by amateur radio organizations, the Powerpole adapter board, the Powerpole Fused Distribution Board, and permanently bonded housings. 
+
+![Powerpole Polarity](/assets/making-connections/Powerpole-Red-Right-Figure.png)
+
+- Below is a quality guide for Anderson Powerpole crimps. 
+
+![Powerpole Quality](/assets/making-connections/Powerpole-Quality-Figure.png)
 
 ### Anderson SB50
 
@@ -102,11 +116,16 @@ This page covers everything needed for you to make successful connections in the
 
 
 ### Lineman's Splice
-* The Lineman’s Splice also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo) is probably the highest strength solder joint, and also the one with the profile best fit for heatshrink.
-  * Solder sleeves (explain why not to use them: low-melt solder, which is usually low quality, and doesn't flow well. It's just as easy as normal solder splices to get wrong if you don't apply enough heat for long enough.)
-* 221 Inline WAGOs & y/g WAGOs
-  * Solder connections are not advised as they are fragile and do not typically stand through much strain
-  * Crimp connections are recommended
+* The Lineman Splice, also known as the [NASA Splice](https://m.youtube.com/watch?v=O-ymw7d_nYo), is one of the most widespread types of solder splices in use due to it's reliability and ease of use. The following figure is taken from NASA-STD-8739.4
+
+![Lineman Splice](/assets/making-connections/Lineman-Splice.png)
+
+* Tips for soldering a lineman splice:
+    * The stripped section of wire should be pre-tinned to form solid sections with just enough solder to hold the strands together.
+    * The wires should be wrapped around each other as shown. The wraps should be tight without overlapping, then trimmed flush. The wire should not overlap the insulation.
+    * Solder should be applied to the wraps. The entire connection should be covered with solder, but the underlying shape should still be visible. 
+
+* Like all soldered connections, the solder creates a more rigid section of wire which is more vulnerable to breaking. When routing and securing wires, the wire should be secured to prevent repeated bending of the soldered area.  
 
 ### WAGO Connectors
 
