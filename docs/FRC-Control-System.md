@@ -25,10 +25,10 @@ title: FRC Control System
 
 The previous section only covered how to power your control system. This section will cover communication with your control system devices.
 * The robot radio allows the Driver Station to communicate with the robot, and connects onboard devices with the robot controller. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect direction to the Driver Station or other computer.
-  * While the radio will function if you connect devices on the robot to all 4 ports, this is not recommended because it would require removing a device to tether. This makes it possible to forget to plug the device back in, and it means that the robot system will be different while tethered than it is on the field.
+  * Avoid using the Driver Station port for onboard devices. Instead, you can use a dedicated network switch to provide more ports than the radio alone provides.
   * If you need additional ports on the radio, you can connect one port to an Ethernet switch and your additional devices to that.
-* The Systemcore controls all the motors on your robot and can also read many types of sensors. Nearly all your motor controllers will communicate with the Systemcore through CAN. The Systemcore has ports for up to 5 CAN buses.
-  * While you can theoretically put as many devices as you want on the same CAN bus, trying to connect everything on your robot to a single bus can cause problems. If there are too many devices on one bus, you can exceed the bus’s utilization limit. This means there isn’t enough time for all the devices to send all the messages they are trying to. While you can adjust settings in software to reduce this problem, it is safest to spread your devices across multiple buses to keep the utilization on all of them low.
+* The Systemcore can control motors via its PWM or CAN interfaces. Modern FRC motor controllers support both protocols, though CAN provides bidirectional communication, and more advanced control. The Systemcore supports 5 native CAN buses, as well as external CAN Busses such as the CTRE Canivore.
+  * CAN Busses have a bandwidth limit that should not be exceeded. Consider splitting devices across multiple busses to keep individual bus utilization lower. Devices that are on separate busses will not be able to communicate with each other. Be sure to keep sensors on the same bus as the motors that utilize them, such as your swerve motors and encoders.
 * The Systemcore has 4 USB ports. You can also create a CAN bus by connecting a [CTRE CANivore](https://store.ctr-electronics.com/products/canivore) to the Systemcore through one of its USB ports.
   * It is also useful to use a USB port for a flash drive to store robot data log files. After each match at a competition, you can unplug it to quickly view the logs on your computer without needing to keep the robot powered on.
 * Many types of sensors, like [CTRE’s CANcoder](https://store.ctr-electronics.com/products/cancoder), communicate over CAN, so you can wire them into your CAN buses just like motors
@@ -37,7 +37,7 @@ The previous section only covered how to power your control system. This section
 * These ports can also function as Pulse Width Modulation (PWM) outputs or digital outputs.
   * PWM is another way to command a motor controller, but it is far inferior to CAN because it does not allow the motor controller to communicate at all with any other devices. A Smart I/O port set to PWM output can only control one motor controller, compared to the dozen or more devices you can connect to a single CAN bus.
   * Digital outputs can be used to control pneumatic solenoids
-* The last key port on the Systemcore is the Robot Signal Light (RSL) port. This is the only place you need to wire the RSL to.
+* The Systemcore also contains an RSL port
 
 
 ## CAN (Controller Area Network)
