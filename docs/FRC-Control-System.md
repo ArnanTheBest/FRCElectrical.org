@@ -9,8 +9,8 @@ title: FRC Control System
 
 * Battery supplies Power to the Robot
 * The battery connects to a Main Breaker and then a Power Distribution (PD) device 
-* Every other component that receives power from the battery is connected to one slot on the PD
-* This covers almost everything on your robot. Cameras or coprocessors (other computing devices in addition to the Systemcore) can come with built-in batteries or can take small USB battery packs.
+* Every other component that receives power from the battery is connected to a PD circuit, either directly or indirectly.
+* This covers almost everything on your robot. The only exceptions are for cameras or coprocessors (other computing devices in addition to the Systemcore) that come with built-in batteries or take small USB battery packs.
 * Every port on the PD that you use must be protected by a Breaker or a Fuse. You will use breakers to protect most devices. The minimum gauge of wire that you are allowed to use in each port is determined by which breaker or fuse is connected to that port—larger breakers/fuses require larger wires.
 * Each port on the PD may only connect to one pair of wires. Most of your use cases, like powering motors, will involve connecting only one device per port, so only one pair of power wires is necessary.
 * However, some small devices, like the four encoders on a swerve drive, can easily be powered together by a single PD port. To power multiple devices from one PD port, you can connect a smaller power distribution device, like a REV Mini Power Module, or splice multiple wires together by soldering them or using a terminal block.
@@ -23,8 +23,8 @@ title: FRC Control System
 
 ## Control System Communications & Signal Basics
 
-The previous section only covered how to make the devices on your robot turn on. To make things move, you’ll need signals too. The next few sections will build on top of this one, to cover more on how to manage your robot.
-* Almost all outside communication with the robot starts with the Robot Radio. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect a computer for when you need to use a wired connection to the robot (commonly referred to as “tethering”), like in the pits at a competition.
+The previous section only covered how to power your control system. This section will cover communication with your control system devices.
+* The robot radio allows the Driver Station to communicate with the robot, and connects onboard devices with the robot controller. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect direction to the Driver Station or other computer.
   * While the radio will function if you connect devices on the robot to all 4 ports, this is not recommended because it would require removing a device to tether. This makes it possible to forget to plug the device back in, and it means that the robot system will be different while tethered than it is on the field.
   * If you need additional ports on the radio, you can connect one port to an Ethernet switch and your additional devices to that.
 * The Systemcore controls all the motors on your robot and can also read many types of sensors. Nearly all your motor controllers will communicate with the Systemcore through CAN. The Systemcore has ports for up to 5 CAN buses.
