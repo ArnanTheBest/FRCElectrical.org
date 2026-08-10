@@ -37,7 +37,7 @@ The previous section only covered how to power your control system. This section
 * These ports can also function as Pulse Width Modulation (PWM) outputs or digital outputs.
   * PWM is another way to command a motor controller, but it is far inferior to CAN because it does not allow the motor controller to communicate at all with any other devices. A Smart I/O port set to PWM output can only control one motor controller, compared to the dozen or more devices you can connect to a single CAN bus.
   * Digital outputs can be used to control pneumatic solenoids
-* The last key port on the Systemcore is the Robot Signal Light (RSL) port. This is the only place you need to wire the RSL to.
+* The Systemcore also contains an RSL port
 
 
 ## CAN (Controller Area Network)
