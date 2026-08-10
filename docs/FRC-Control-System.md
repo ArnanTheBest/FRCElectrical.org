@@ -8,12 +8,37 @@ title: FRC Control System
 ## Control System Basics
 
 * Battery supplies Power to the Robot
-* Power originates with a distribution hub or panel (PDH/PDP/AMPD) 
-* Swerve encoders can be spliced from a single wire.
-  * Soldering is a way that teams have done this. You’ll learn later why soldering is considered bad for an FRC environment, but for now, just understand it is a worse solution than others. 
-  * A 5-port [Wago](https://www.amazon.com/LEPEVNEY-Electrical-Connectors-Retardant-Connector/dp/B0GCJGNR1R/ref=sr_1_4?crid=3S5XVPL2BYERF&dib=eyJ2IjoiMSJ9.fnqoyr8S4BoE6gGHz4zoKNKmHKklMrr4b2weTcpcWDTtgCFb9RqDgBQ5F-tbMFAbu-gasv3x3za6PIa3aqW2dUvf2vMRlnPKnQA48KHO2SYTRiV69c_SfiG7Uk7fiULECS2MLTP-yaaymRvp14ij9Mud3-jhJY4C9Ki-CUEiCTAhYIK6Oak4YNHcirDnV_LF4RVtLIb8UO6KggrtqmTMvYdDPQzeTNgsVz_f8BBDDcQ.zFwnjvta4aXVr957XsFxWN2hmtDJTrVbEffRnxRYKV0&dib_tag=se&keywords=Wago%2B2%2BPort%2B(10)%2B3%2BPort%2B(10)%2B5%2BPort%2B(4)%2BLever-Nut%2BAssortment%2BPack%2BConductor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotiveor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotive&nsdOptOutParam=true&qid=1780958682&sprefix=wago%2B2%2Bport%2B10%2B3%2Bport%2B10%2B5%2Bport%2B4%2Blever-nut%2Bassortment%2Bpack%2Bconductor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotiveor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotive%2Caps%2C183&sr=8-4&th=1) is the most common correct way to accomplish a 4-way splice for encoder wires. 
+* The battery connects to a Main Breaker and then a Power Distribution (PD) device 
+* Every other component that receives power from the battery is connected to one slot on the PD
+* This covers almost everything on your robot. The only exceptions are for cameras or coprocessors (other computing devices in addition to the Systemcore) that come with built-in batteries or take small USB battery packs.
+* Every port on the PD that you use must be protected by a Breaker or a Fuse. You will use breakers to protect most devices. The minimum gauge of wire that you are allowed to use in each port is determined by which breaker or fuse is connected to that port—larger breakers/fuses require larger wires.
+* Each port on the PD may only connect to one pair of wires. Most of your use cases, like powering motors, will involve connecting only one device per port, so only one pair of power wires is necessary.
+* However, some small devices, like the four encoders on a swerve drive, can easily be powered together by a single PD port. To power multiple devices from one PD port, you can connect a smaller power distribution device, like a REV Mini Power Module, or splice multiple wires together by soldering them or using a terminal block.
+  * This [5-port Wago-style connector](https://www.amazon.com/LEPEVNEY-Electrical-Connectors-Retardant-Connector/dp/B0GCJGNR1R/ref=sr_1_4?crid=3S5XVPL2BYERF&dib=eyJ2IjoiMSJ9.fnqoyr8S4BoE6gGHz4zoKNKmHKklMrr4b2weTcpcWDTtgCFb9RqDgBQ5F-tbMFAbu-gasv3x3za6PIa3aqW2dUvf2vMRlnPKnQA48KHO2SYTRiV69c_SfiG7Uk7fiULECS2MLTP-yaaymRvp14ij9Mud3-jhJY4C9Ki-CUEiCTAhYIK6Oak4YNHcirDnV_LF4RVtLIb8UO6KggrtqmTMvYdDPQzeTNgsVz_f8BBDDcQ.zFwnjvta4aXVr957XsFxWN2hmtDJTrVbEffRnxRYKV0&dib_tag=se&keywords=Wago%2B2%2BPort%2B(10)%2B3%2BPort%2B(10)%2B5%2BPort%2B(4)%2BLever-Nut%2BAssortment%2BPack%2BConductor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotiveor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotive&nsdOptOutParam=true&qid=1780958682&sprefix=wago%2B2%2Bport%2B10%2B3%2Bport%2B10%2B5%2Bport%2B4%2Blever-nut%2Bassortment%2Bpack%2Bconductor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotiveor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotive%2Caps%2C183&sr=8-4&th=1) is our preferred way to make a four-way splice. Soldering, especially with power wires 18 AWG or larger, is not recommended.
+
+!!! warning
+    Some components, like the Radio, have specific rules regarding how they must be powered. Be sure to read the power distribution rules fully and ensure that you are powering every device in a legal way.
 
 ![5Wago](/assets/FRC-Control-System/5Wago.png)
+
+## Control System Communications & Signal Basics
+
+The previous section only covered how to make the devices on your robot turn on. To make things move, you’ll need signals too. The next few sections will build on top of this one, to cover more on how to manage your robot.
+* Almost all outside communication with the robot starts with the Robot Radio. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect a computer for when you need to use a wired connection to the robot (commonly referred to as “tethering”), like in the pits at a competition.
+  * While the radio will function if you connect devices on the robot to all 4 ports, this is not recommended because it would require removing a device to tether. This makes it possible to forget to plug the device back in, and it means that the robot system will be different while tethered than it is on the field.
+  * If you need additional ports on the radio, you can connect one port to an Ethernet switch and your additional devices to that.
+* The Systemcore controls all the motors on your robot and can also read many types of sensors. Nearly all your motor controllers will communicate with the Systemcore through CAN. The Systemcore has ports for up to 5 CAN buses.
+  * While you can theoretically put as many devices as you want on the same CAN bus, trying to connect everything on your robot to a single bus can cause problems. If there are too many devices on one bus, you can exceed the bus’s utilization limit. This means there isn’t enough time for all the devices to send all the messages they are trying to. While you can adjust settings in software to reduce this problem, it is safest to spread your devices across multiple buses to keep the utilization on all of them low.
+* The Systemcore has 4 USB ports. You can also create a CAN bus by connecting a [CTRE CANivore](https://store.ctr-electronics.com/products/canivore) to the Systemcore through one of its USB ports.
+  * It is also useful to use a USB port for a flash drive to store robot data log files. After each match at a competition, you can unplug it to quickly view the logs on your computer without needing to keep the robot powered on.
+* Many types of sensors, like [CTRE’s CANcoder](https://store.ctr-electronics.com/products/cancoder), communicate over CAN, so you can wire them into your CAN buses just like motors
+* Some other sensors, like [TTB’s Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder), can connect directly to the motor controller of the relevant motor
+* For any other sensors, or for cases where you do not want to connect a sensor to its motor controller, the Systemcore also contains 6 Smart I/O ports. While these ports can be used in multiple ways, the most common is to read the outputs of digital or analog sensors.
+* These ports can also function as Pulse Width Modulation (PWM) outputs or digital outputs.
+  * PWM is another way to command a motor controller, but it is far inferior to CAN because it does not allow the motor controller to communicate at all with any other devices. A Smart I/O port set to PWM output can only control one motor controller, compared to the dozen or more devices you can connect to a single CAN bus.
+  * Digital outputs can be used to control pneumatic solenoids
+* The last key port on the Systemcore is the Robot Signal Light (RSL) port. This is the only place you need to wire the RSL to.
+
 
 ## CAN (Controller Area Network)
 * CAN can be wired in two different ways:
