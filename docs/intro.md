@@ -10,7 +10,7 @@ This may come as a shock, but electronics are dangerous. A single mistake could 
 
 - A battery spilling is dangerous for everyone because it can cause chemical burns and damage if you touch it. When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. Do **not** touch your eyes until after washing your hands.
 - Never hold batteries from the wires. Always hold them from the body. By holding batteries from their wires, you are wearing down the connection between the wire and the battery which can be detrimental for performance. This can also lead to a snap in the batteries terminal, which can drop the battery if you're holding it.
-- Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. You don't want to get shocked or have a wire snap and hit you in the eye.
+- Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. 
 - Don’t touch the metals of opposite polarity wires together, especially for batteries as it can cause sparks and flame.
 - Don’t allow metal shavings to get into components: Use electrical tape to cover open holes in components. This prevents short circuits and damage to sensitive parts.
   - A short circuit is when two wires with different polarities have contact, causing a large current to flow and potentially causing fire or damage to components.
