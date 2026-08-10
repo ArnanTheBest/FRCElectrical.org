@@ -10,7 +10,7 @@ title: FRC Control System
 * Battery supplies Power to the Robot
 * The battery connects to a Main Breaker and then a Power Distribution (PD) device 
 * Every other component that receives power from the battery is connected to one slot on the PD
-* This covers almost everything on your robot. The only exceptions are for cameras or coprocessors (other computing devices in addition to the Systemcore) that come with built-in batteries or take small USB battery packs.
+* This covers almost everything on your robot. Cameras or coprocessors (other computing devices in addition to the Systemcore) can come with built-in batteries or can take small USB battery packs.
 * Every port on the PD that you use must be protected by a Breaker or a Fuse. You will use breakers to protect most devices. The minimum gauge of wire that you are allowed to use in each port is determined by which breaker or fuse is connected to that port—larger breakers/fuses require larger wires.
 * Each port on the PD may only connect to one pair of wires. Most of your use cases, like powering motors, will involve connecting only one device per port, so only one pair of power wires is necessary.
 * However, some small devices, like the four encoders on a swerve drive, can easily be powered together by a single PD port. To power multiple devices from one PD port, you can connect a smaller power distribution device, like a REV Mini Power Module, or splice multiple wires together by soldering them or using a terminal block.
