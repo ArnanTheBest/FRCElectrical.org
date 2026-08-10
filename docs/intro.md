@@ -33,10 +33,9 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
         - Twist the wire pairs: We do this because it allows any external vibrations and EMI to affect both wires rather than one, keeping the measurements on each wire consistent with each other.
         - Strain relief: Strain relief is when you give wiring to a strong component that eliminates the potential of a stronger, unintended force, from pulling on the wire. This way, the strain is pulling on the component instead of the wire's connector. This is important in any system, whether power or CAN.
 - PWM (pronounced pee-vee-em): "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
-    - The functionality for this can be found in the Smart I/O ports on the Systemcore
+    - Systemcore contains 6 PWM ports via Smart I/O
 - I2C (pronounced eye-squared-see or eye-two-see): "Inter-Integrated Circuit" - two-wire signaling to send any value between 0-100%
-    - The functionality for this can be found in the Smart I/O ports on the Systemcore
-
+    - Systemcore contains 6 PWM ports via Smart I/O
 
 === "CAN Wiring"
     ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png){ width="50%" }
