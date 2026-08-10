@@ -23,7 +23,7 @@ title: FRC Control System
 
 ## Control System Communications & Signal Basics
 
-The previous section only covered how to make the devices on your robot turn on. To make things move, you’ll need signals too. The next few sections will build on top of this one, to cover more on how to manage your robot.
+The previous section only covered how to power your control system. This section will cover communication with your control system devices.
 * Almost all outside communication with the robot starts with the Robot Radio. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect a computer for when you need to use a wired connection to the robot (commonly referred to as “tethering”), like in the pits at a competition.
   * While the radio will function if you connect devices on the robot to all 4 ports, this is not recommended because it would require removing a device to tether. This makes it possible to forget to plug the device back in, and it means that the robot system will be different while tethered than it is on the field.
   * If you need additional ports on the radio, you can connect one port to an Ethernet switch and your additional devices to that.
