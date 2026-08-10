@@ -31,9 +31,8 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
     - Differential Buses: CAN is a differential bus. This means that it essentially transfers information by measuring the voltage difference between two wires in a pair (CAN High (Yellow) and CAN Low (Green)). This makes it more resistant to noise, or electromagnetic interference (EMI), which is prevalent in FRC. However, some measures need to be taken for this noise resistance to be most effective:
         - Twist the wire pairs: We do this because it allows any external vibrations and EMI to affect both wires rather than one, keeping the measurements on each wire consistent with each other.
         - Strain relief: Strain relief is when you give wiring room to "breathe". Allowing it not to be stressed and potentially rip out connections in wiring. This is important in any system, whether power or CAN, but it is especially important for CAN wires to reduce noise and vibrations. 
-- PWM: "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
+- PWM (pronounced pee-vee-em): "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
     - The functionality for this can be found in the Smart I/O ports on the Systemcore
-
 - I2C (pronounced eye-squared-see or eye-two-see): "Inter-Integrated Circuit" - two-wire signaling to send any value between 0-100%
     - The functionality for this can be found in the Smart I/O ports on the Systemcore
 
@@ -52,7 +51,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
     - These wires carry high current and need to be thick to handle the load.
   - For smaller components, you'll typically see 18-22 AWG wires (CAN, PWM, etc)
     - These wires carry lower current and can be thinner.
-  - Other components, like motors, will typically bear 8-12 AWG wires.
+  - Other components, like motors, will typically have 8-12 AWG wires.
 
 ### Parallel vs Series
 #### Parallel
