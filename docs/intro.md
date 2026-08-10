@@ -8,8 +8,8 @@ title: Intro to FRC Electrical
 ## Safety
 This may come as a shock, but electronics are dangerous. A single mistake could lead to serious injury, and it is vital to learn how to follow proper procedure when handling electronics.
 
-- A battery spilling is dangerous for everyone because it can cause chemical burns and damage if untreated. When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. 
-- Never hold batteries from the wires. Always hold them from the body. By holding batteries from their wires, you are wearing down the connection between the wire and the battery which can be detrimental for performance.
+- A battery spilling is dangerous for everyone because it can cause chemical burns and damage if you touch it. When a battery spills, cover it with baking soda. This neutralizes the battery acid and it becomes less harmful. Do **not** touch your eyes until after washing your hands.
+- Never hold batteries from the wires. Always hold them from the body. By holding batteries from their wires, you are wearing down the connection between the wire and the battery which can be detrimental for performance. This can also lead to a snap in the batteries terminal, which can drop the battery if you're holding it.
 - Always wear PPE when handling electronics. This includes at the bare minimum safety glasses. You don't want to get shocked or have a wire snap and hit you in the eye.
 - Don’t touch the metals of opposite polarity wires together, especially for batteries as it can cause sparks and flame.
 - Don’t allow metal shavings to get into components: Use electrical tape to cover open holes in components. This prevents short circuits and damage to sensitive parts.
@@ -23,7 +23,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
 - The standard definition is the difference in electric potential between two points. However, this is hard to imagine visually. Think of a wire as a pipe, and the electrons flowing through it as water. Voltage would be the water pressure. It is measured in Volts (V), where a higher voltage means more pressure/potential.
 - Current, in this analogy, would be the rate at which water flows through the pipe. It is the flow of electrons going through the wire measured in Amps (A).
 - Resistance can be thought of as blockages in this pipe or as points where it gets narrow. It is the resistance of the flow of electrons measured in Ohms (Ω) that slows the electrons from getting from point A to point B.
-- Ohm's Law: V = I * R where V is voltage, I is current, and R is resistance.
+- Ohm's Law: $V = I \cdot R$ where $V$ is voltage, $I$ is current, and $R$ is resistance.
 
 ### Power vs. CAN vs. PWM vs. I2C
 - Power wire is red (for positive terminals) and black (for negative and ground terminals). FRC power wires MUST be color-coded separately, as they can be dangerous when not indicated. Red and black are the most common ways to do so. They can be thought of as the blood vessels that deliver power to every part of the robot. 
