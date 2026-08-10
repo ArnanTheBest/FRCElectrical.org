@@ -15,6 +15,7 @@ This may come as a shock, but electronics are dangerous. A single mistake could 
 - Don’t allow metal shavings to get into components: Use electrical tape to cover open holes in components. This prevents short circuits and damage to sensitive parts.
   - A short circuit is when two wires with different polarities have contact, causing a large current to flow and potentially causing fire or damage to components.
 - Keep exposed wires away from things that can break them like motor splines or the insides of swerve modules. This prevents damage to the wires and potential short circuits.
+  - Always try and keep your wiring mounted on the robot and away from the motion of your and other robots.
 
 ## Electrical Theory
 While electrical isn’t overly complex and the theory is rarely used in FRC electrical, a basic understanding is good to know.
