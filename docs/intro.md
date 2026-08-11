@@ -32,7 +32,7 @@ While electrical isn’t overly complex and the theory is rarely used in FRC ele
     - Differential Buses: CAN is a differential bus. This means that it essentially transfers information by measuring the voltage difference between two wires in a pair (CAN High (Yellow) and CAN Low (Green)). This makes it more resistant to noise, or electromagnetic interference (EMI), which is prevalent in FRC. However, some measures need to be taken for this noise resistance to be most effective:
         - Twist the wire pairs: We do this because it allows any external vibrations and EMI to affect both wires rather than one, keeping the measurements on each wire consistent with each other.
         - Strain relief: Strain relief is when you give wiring to a strong component that eliminates the potential of a stronger, unintended force, from pulling on the wire. This way, the strain is pulling on the component instead of the wire's connector. This is important in any system, whether power or CAN.
-- PWM (pronounced pee-vee-em): "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
+- PWM: "Pulse-Width Modulation" - one-wire signaling to send any value between 0-100%
     - Systemcore contains 6 PWM ports via Smart I/O
 - I2C (pronounced eye-squared-see or eye-two-see): "Inter-Integrated Circuit" - two-wire signaling to send any value between 0-100%
     - Systemcore contains 6 PWM ports via Smart I/O
