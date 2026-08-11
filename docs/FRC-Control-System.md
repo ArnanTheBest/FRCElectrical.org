@@ -8,20 +8,46 @@ title: FRC Control System
 ## Control System Basics
 
 * Battery supplies Power to the Robot
-* Power originates with a distribution hub or panel (PDH/PDP/AMPD) 
-* Swerve encoders can be spliced from a single wire.
-  * Soldering is a way that teams have done this. You’ll learn later why soldering is considered bad for an FRC environment, but for now, just understand it is a worse solution than others. 
-  * A 5-port [Wago](https://www.amazon.com/LEPEVNEY-Electrical-Connectors-Retardant-Connector/dp/B0GCJGNR1R/ref=sr_1_4?crid=3S5XVPL2BYERF&dib=eyJ2IjoiMSJ9.fnqoyr8S4BoE6gGHz4zoKNKmHKklMrr4b2weTcpcWDTtgCFb9RqDgBQ5F-tbMFAbu-gasv3x3za6PIa3aqW2dUvf2vMRlnPKnQA48KHO2SYTRiV69c_SfiG7Uk7fiULECS2MLTP-yaaymRvp14ij9Mud3-jhJY4C9Ki-CUEiCTAhYIK6Oak4YNHcirDnV_LF4RVtLIb8UO6KggrtqmTMvYdDPQzeTNgsVz_f8BBDDcQ.zFwnjvta4aXVr957XsFxWN2hmtDJTrVbEffRnxRYKV0&dib_tag=se&keywords=Wago%2B2%2BPort%2B(10)%2B3%2BPort%2B(10)%2B5%2BPort%2B(4)%2BLever-Nut%2BAssortment%2BPack%2BConductor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotiveor%2BCompact%2BConnector%2BTerminal%2BBlock%2BWire%2BPush%2BCable%2BConnector%2B12-28%2BAWG%2C%2B32A%3A%2BAutomotive&nsdOptOutParam=true&qid=1780958682&sprefix=wago%2B2%2Bport%2B10%2B3%2Bport%2B10%2B5%2Bport%2B4%2Blever-nut%2Bassortment%2Bpack%2Bconductor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotiveor%2Bcompact%2Bconnector%2Bterminal%2Bblock%2Bwire%2Bpush%2Bcable%2Bconnector%2B12-28%2Bawg%2C%2B32a%2Bautomotive%2Caps%2C183&sr=8-4&th=1) is the most common correct way to accomplish a 4-way splice for encoder wires. 
+* The battery connects to a Main Breaker and then a Power Distribution (PD) device 
+* Every other component that receives power from the battery is connected to a PD circuit, either directly or indirectly.
+* This covers almost everything on your robot. The only exceptions are for cameras or coprocessors (other computing devices in addition to the Systemcore) that come with built-in batteries or take small USB battery packs.
+* Every port on the PD that you use must be protected by a Breaker or a Fuse. You will use breakers to protect most devices. The minimum gauge of wire that you are allowed to use in each port is determined by which breaker or fuse is connected to that port—larger breakers/fuses require larger wires.
+* Each port on the PD may only connect to one pair of wires. Most of your use cases, like powering motors, will involve connecting only one device per port, so only one pair of power wires is necessary.
+* However, some small devices, like the four encoders on a swerve drive, can easily be powered together by a single PD port. To power multiple devices from one PD port, you can connect a smaller power distribution device, like a REV Mini Power Module, or splice multiple wires together by soldering them or using a terminal block.
+  * This [5-port Wago-style connector](https://www.amazon.com/LEPEVNEY-Electrical-Connectors-Retardant-Connector/dp/B0GCJGNR1R/ref=sr_1_4?) is our preferred way to make a four-way splice. Soldering, especially with power wires 18 AWG or larger, is not recommended.
+
+!!! warning
+    Some components, like the Radio, have specific rules regarding how they must be powered. Be sure to read the power distribution rules fully and ensure that you are powering every device in a legal way.
 
 ![5Wago](/assets/FRC-Control-System/5Wago.png)
 
+## Control System Communications & Signal Basics
+
+The previous section only covered how to power your control system. This section will cover communication with your control system devices.
+
+* The robot radio allows the Driver Station to communicate with the robot, and connects onboard devices with the robot controller. The radio communicates with other devices on the robot through Ethernet cables. The radio has 4 Ethernet ports—1 for the Systemcore, 2 for other devices (such as cameras), and 1 to connect direction to the Driver Station or other computer.
+    * Avoid using the Driver Station port for onboard devices. Instead, you can use a dedicated network switch to provide more ports than the radio alone provides.
+    * If you need additional ports on the radio, you can connect one port to an Ethernet switch and your additional devices to that.
+* The Systemcore can control motors via its PWM or CAN interfaces. Modern FRC motor controllers support both protocols, though CAN provides bidirectional communication, and more advanced control. The Systemcore supports 5 native CAN buses, as well as external CAN Busses such as the CTRE Canivore.
+    * CAN Busses have a bandwidth limit that should not be exceeded. Consider splitting devices across multiple busses to keep individual bus utilization lower. Devices that are on separate busses will not be able to communicate with each other. Be sure to keep sensors on the same bus as the motors that utilize them, such as your swerve motors and encoders.
+* The Systemcore has 4 USB ports. You can also create a CAN bus by connecting a [CTRE CANivore](https://store.ctr-electronics.com/products/canivore) to the Systemcore through one of its USB ports.
+    * It is also useful to use a USB port for a flash drive to store robot data log files. After each match at a competition, you can unplug it to quickly view the logs on your computer without needing to keep the robot powered on.
+* Many types of sensors, like [CTRE’s CANcoder](https://store.ctr-electronics.com/products/cancoder), communicate over CAN, so you can wire them into your CAN buses just like motors
+* Some other sensors, like [TTB’s Thrifty Absolute Magnetic Encoder](https://www.thethriftybot.com/products/thrifty-absolute-magnetic-encoder), can connect directly to the motor controller of the relevant motor
+* For any other sensors, or for cases where you do not want to connect a sensor to its motor controller, the Systemcore also contains 6 Smart I/O ports. While these ports can be used in multiple ways, the most common is to read the outputs of digital or analog sensors.
+* These ports can also function as Pulse Width Modulation (PWM) outputs or digital outputs.
+    * PWM is another way to command a motor controller, but it is far inferior to CAN because it does not allow the motor controller to communicate at all with any other devices. A Smart I/O port set to PWM output can only control one motor controller, compared to the dozen or more devices you can connect to a single CAN bus.
+    * Digital outputs can be used to control pneumatic solenoids
+* The Systemcore also contains an RSL port
+
+
 ## CAN (Controller Area Network)
 * CAN can be wired in two different ways:
-  * Daisy-chained: this is the way that CAN is meant to be wired, and it is the most common way that FRC components are wired. CAN wires originate at the Systemcore in one of the CAN bus ports. The wires then go to each component in order, ending at the terminating resistor. One full loop, as mentioned previously, is called a CAN bus.
-  * Star topology (not recommended): This is the method used to branch the CAN bus by each individual component. This is used by some teams because in a normal CAN bus, if one component loses a connection, they all do. 
-    * With a Star topology, each component has its own individual “CAN bus”. This is not recommended at all in modern FRC, as the introduction of SystemCore allows you to split up CAN buses much further than originally. 
-    * Additionally, a star topology presents many issues as it is NOT AT ALL how CAN is meant to be wired.
-  * CAN loops always need to be terminated using a 120 OHM resistor to prevent signal reflection. Read about CAN termination below.
+    * Daisy-chained: this is the way that CAN is meant to be wired, and it is the most common way that FRC components are wired. CAN wires originate at the Systemcore in one of the CAN bus ports. The wires then go to each component in order, ending at the terminating resistor. One full loop, as mentioned previously, is called a CAN bus.
+    * Star topology (not recommended): This is the method used to branch the CAN bus by each individual component. This is used by some teams because in a normal CAN bus, if one component loses a connection, they all do. 
+        * With a Star topology, each component has its own individual “CAN bus”. This is not recommended at all in modern FRC, as the introduction of SystemCore allows you to split up CAN buses much further than originally. 
+        * Additionally, a star topology presents many issues as it is NOT AT ALL how CAN is meant to be wired.
+    * Always place the resistor at the end of each loop. This will be a 120 OHM resistor in a WAGO, or if terminating at a motor with a powerpole adapter board, the Weidmuller connectors may be used.
 
 ![CAN-Wiring](/assets/FRC-Control-System/CAN-Wiring.png)
 
@@ -32,7 +58,7 @@ There are many ways to terminate a CAN bus, but the most common ways are:
 * Using the Weidmuller connectors on a motor with a powerpole adapter board
 * Soldering a 120 OHM resistor
 * Using a 120 OHM resistor in a Power Distribution Panel (PDP) or Power Distribution Hub (PDH)
-* Using the [Swyft](https://swyftrobotics.com/electrical/swyft-canender) CANender
+* Using the [SWYFT](https://swyftrobotics.com/electrical/swyft-canender) CANender
 
 !!! info "Terminating a CAN Bus"
     When terminating a CAN bus, it is important to ensure that the resistor is placed at the end of the loop. This will prevent any signal reflection and ensure that the CAN bus is properly terminated.
@@ -102,7 +128,7 @@ These are the devices that control the motors and help direct power and signals 
 
 === "CTRE's Talon FX"
 
-    ![TalonFX](/assets/FRC-Control-System/Talon-FX.png)
+    ![TalonFX](/assets/FRC-Control-System/Talon-FX.png){ width="75%" }
 
     * This is the controller that is integrated into the Kraken’s (both X60 and X44). Talon FX acts as an integrated motor controller, meaning that an external controller that is separately wired is not needed.
     * For Kraken X60/X44s, wiring is relatively simple because the controller is integrated in the motor itself. CAN and power directly stem from the motor and can be connected to their appropriate locations.

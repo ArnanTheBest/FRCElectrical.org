@@ -15,6 +15,7 @@ This is the general FRC Pneumatics Layout you need to learn:
 ![FRC Pneumatics System](assets/FRC%20Pneumatics%20Layout.png)
 
 Here are the FRC Pneumatic Components Explained:
+
 * Compressor: Charges air for components on the robot, like a battery that provides electricity to components, and the compressor provides air.
 
 * Pressure Switch: Works with a controller to tell the compressor when to shut off.
